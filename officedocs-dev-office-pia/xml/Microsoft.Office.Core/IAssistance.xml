@@ -1,0 +1,186 @@
+<Type Name="IAssistance" FullName="Microsoft.Office.Core.IAssistance">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7d132f43925371385c5db2be9aa6102237cdaa66" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659170" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IAssistance" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAssistance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IAssistance" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAssistance" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAssistance" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4291224C-DEFE-485B-8E69-6CF8AA85CB76")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Fournit un moyen aux développeurs de créer une aide personnalisée destinée aux utilisateurs de Microsoft Office.</summary>
+    <remarks>
+      <para>La propriété de <b>l’aide</b> d’un objet <b>Application</b> renvoie une <see cref="T:Microsoft.Office.Core.IAssistance" /> objet. Le <see cref="T:Microsoft.Office.Core.IAssistance" /> objet expose les méthodes qui permettent aux développeurs d’afficher des rubriques d’aide dans la visionneuse de l’aide Office ou pour afficher les rubriques d’aide fournis avec Office dans la fenêtre d’aide de l’application hôte. Les développeurs transmettre l’ID d’aide spécifique au système d’aide ou transmettre les requêtes de recherche spécifique. Les identificateurs d’aide doivent être ajoutés explicitement au fichier d’aide dans l’ordre pour l’ID d’aide renvoyer la rubrique d’aide.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearDefaultContext">
+      <MemberSignature Language="C#" Value="public void ClearDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ClearDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">ID de la rubrique d'aide par défaut.</param>
+        <summary>Désactive la rubrique d’aide par défaut préalablement définie dans le <see cref="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" /> méthode.</summary>
+        <remarks>
+          <para>Exécuter cette méthode empêche la rubrique d’aide par défaut de s’afficher lorsque l’utilisateur appuie sur F1 ou clique sur le bouton Aide dans une boîte de dialogue.</para> Propriété 
+          <para>l' <b>aide</b> d’un objet <b>Application</b> renvoie une <see cref="T:Microsoft.Office.Core.IAssistance" /> objet. Le <see cref="T:Microsoft.Office.Core.IAssistance" /> objet expose les méthodes qui permettent aux développeurs d’afficher des rubriques d’aide dans la visionneuse de l’aide Office ou pour afficher les rubriques d’aide fournis avec Office dans la fenêtre d’aide de l’application hôte. Les développeurs transmettre l’ID d’aide spécifique au système d’aide ou transmettre les requêtes de recherche spécifique. ID de l’aide doivent être ajoutés explicitement au fichier d’aide dans l’ordre pour l’ID d’aide renvoyer la rubrique d’aide.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchHelp">
+      <MemberSignature Language="C#" Value="public void SearchHelp (string Query, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SearchHelp([in]string Query, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SearchHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SearchHelp (Query As String, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Query" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Query">Représente l'expression ou le mot clé de la recherche.</param>
+        <param name="Scope">Facultatif, l’espace de noms enregistré dans l’application hôte.</param>
+        <summary>Effectue une recherche basée sur un ou plusieurs mots clés à partir de la visionneuse de l'aide Microsoft Office. Les mots clés peuvent être un mot ou une expression.</summary>
+        <remarks>
+          <para>La propriété de <b>l’aide</b> d’un objet <b>Application</b> renvoie une <see cref="T:Microsoft.Office.Core.IAssistance" /> objet. Le <see cref="T:Microsoft.Office.Core.IAssistance" /> objet expose les méthodes qui permettent aux développeurs d’afficher des rubriques d’aide dans la visionneuse de l’aide Office ou pour afficher les rubriques d’aide fournis avec Office dans la fenêtre d’aide de l’application hôte. Les développeurs transmettre l’ID d’aide spécifique au système d’aide ou transmettre les requêtes de recherche spécifique. ID de l’aide doivent être ajoutés explicitement au fichier d’aide dans l’ordre pour l’ID d’aide renvoyer la rubrique d’aide.</para>
+          <para>L’utilisateur peut renvoyer une aide plus pertinente en limitant l’étendue de la recherche, dans la mesure où l’étendue spécifiée est applicable à l’application. Les étendues suivantes sont disponibles dans les applications Microsoft Office. Par défaut, l’étendue est définie à l’espace de noms de l’application active si une chaîne <b>vide</b> (« ») est transmis en tant que paramètre.</para>
+          <list type="table">
+            <item>
+              <description>Tous les</description>
+              <description>« » (chaîne vide)</description>
+            </item>
+            <item>
+              <description>Access, Excel, Outlook, PowerPoint, Project, Publisher, SharePoint Designer, Visio et Word</description>
+              <description>pour développeurs</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultContext">
+      <MemberSignature Language="C#" Value="public void SetDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">ID de la rubrique d'aide par défaut.</param>
+        <summary>Cette méthode définit une rubrique d'aide comme étant la rubrique par défaut qui s'affiche lorsque l'utilisateur ouvre une fenêtre d'aide.</summary>
+        <remarks>
+          <para>La rubrique d’aide spécifiée dans cette méthode ne s’affichera pas si Office a déjà défini une rubrique d’aide par défaut dans cette étendue. En outre, pour certaines boîtes de dialogue, qu’un ID est transmis par la méthode, la rubrique d’aide fournie avec Office s’affichera lorsque l’utilisateur appuie sur la touche F1 ou clique sur le bouton aide. Par exemple, si l’utilisateur est dans une boîte de dialogue personnalisée et appuie sur F1, une rubrique d’aide personnalisée ou prédéfinie s’affichera si elle est spécifiée par le développeur. Si aucun ID par défaut n’est spécifié, la rubrique d’aide Office intégrée par défaut s’affichera. De même, si l’utilisateur est dans la boîte de dialogue Nouveau Document, par exemple, la rubrique d’aide Office spécifiée s’affichera, qu’un autre ID est transmis par la méthode. </para>
+          <para>
+            <b>L’Assistance</b> propriété d’un objet <b>Application</b> renvoie une <see cref="T:Microsoft.Office.Core.IAssistance" /> objet. Le <see cref="T:Microsoft.Office.Core.IAssistance" /> objet expose les méthodes qui permettent aux développeurs d’afficher des rubriques d’aide dans la visionneuse de l’aide Office ou pour afficher les rubriques d’aide fournis avec Office dans la fenêtre d’aide de l’application hôte. Les développeurs transmettre l’ID d’aide spécifique au système d’aide ou transmettre les requêtes de recherche spécifique. ID de l’aide doivent être ajoutés explicitement au fichier d’aide dans l’ordre pour l’ID d’aide renvoyer la rubrique d’aide.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public void ShowHelp (string HelpId = &quot;&quot;, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelp([in]string HelpId, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ShowHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowHelp (Optional HelpId As String = &quot;&quot;, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">Facultatif, l’ID de la rubrique d’aide.</param>
+        <param name="Scope">Facultatif, l’espace de noms enregistré dans l’application hôte.</param>
+        <summary>Affiche la rubrique d’aide spécifiée par son ID dans la visionneuse de l’aide Office ou, pour de rubriques fournies avec Office, dans la fenêtre d’aide de l’application Office active.</summary>
+        <remarks>
+          <para>La propriété de <b>l’aide</b> d’un objet <b>Application</b> renvoie une <see cref="T:Microsoft.Office.Core.IAssistance" /> objet. Le <see cref="T:Microsoft.Office.Core.IAssistance" /> objet expose les méthodes qui permettent aux développeurs d’afficher des rubriques d’aide dans la visionneuse de l’aide Office ou pour afficher les rubriques d’aide fournis avec Office dans la fenêtre d’aide de l’application hôte. Les développeurs transmettre l’ID d’aide spécifique au système d’aide ou transmettre les requêtes de recherche spécifique. ID de l’aide doivent être ajoutés explicitement au fichier d’aide dans l’ordre pour l’ID d’aide renvoyer la rubrique d’aide.</para>
+          <para>Les étendues suivantes sont disponibles dans les applications Microsoft Office. Par défaut, l’étendue est définie à l’espace de noms de l’application active si une chaîne <b>vide</b> (« ») est transmis en tant que paramètre.</para>
+          <list type="table">
+            <item>
+              <description>Tous les</description>
+              <description>« » (chaîne vide)</description>
+            </item>
+            <item>
+              <description>Access, Excel, Outlook, PowerPoint, Project, Publisher, SharePoint Designer, Visio et Word</description>
+              <description>pour développeurs</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

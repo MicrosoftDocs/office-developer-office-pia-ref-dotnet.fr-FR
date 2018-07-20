@@ -1,0 +1,225 @@
+<Type Name="AnswerWizard" FullName="Microsoft.Office.Core.AnswerWizard">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2f63a7e2898af1d9dea244a238d194201a4ece2f" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659070" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AnswerWizard : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AnswerWizard implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.AnswerWizard" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AnswerWizard&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AnswerWizard : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0360-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente l’aide intuitive dans une application Microsoft Office.</summary>
+    <remarks>
+      <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+      <para>Il y n'a qu’une seule aide intuitive par application et toutes les modifications apportées à l’objet <b>AnswerWizard</b> ou <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection affectent l’application Office active immédiatement.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" /> méthode pour supprimer toutes les entrées de la liste des fichiers disponible pour l’aide intuitive. Cette méthode permet de s’assurer que les fichiers par défaut disponibles pour l’application hôte Office ne sont plus accessibles par le biais de l’aide intuitive, par exemple lorsque vous remplacez les fichiers d’aide intuitive personnalisés. Fichiers AW.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> méthode pour restaurer la liste des fichiers pour l’aide intuitive actuelle à la liste par défaut des fichiers de l’application hôte Office. Vous pouvez également établir une liste de fichiers par défaut personnalisée dans le Registre Windows en ajoutant les noms des fichiers personnalisés à la clé de Registre appropriés ; les fichiers spécifiés dans cette clé de Registre puis seront restaurées lorsque ResetFileList est appelée.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Core.AnswerWizard.Files" /> propriété pour récupérer la collection de références de fichiers de l’aide intuitive. La propriété <b>Files</b> renvoie une collection de chaînes qui font référence à. Fichiers AW.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFileList">
+      <MemberSignature Language="C#" Value="public void ClearFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Efface la liste des fichiers pour l’aide intuitive actuelle, y compris la liste par défaut des fichiers pour l’application hôte Microsoft Office.</summary>
+        <remarks>
+          <para>Cette méthode permet de supprimer toutes les entrées de la liste des fichiers en cours pour l’application spécifiée. Vous pouvez également l’utiliser pour vous assurer qu’aucun des fichiers par défaut AnswerWizard pour l’application hôte sont accessibles aux utilisateurs. Vous pouvez ensuite créer une liste de fichiers personnalisée à l’aide de la <see cref="M:Microsoft.Office.Core.AnswerWizardFiles.Add(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection.</para>
+          <para>Pour restaurer le fichier d’aide intuitive par défaut définie pour l’application hôte, utilisez la <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> méthode.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Par exemple du fonctionne de cette propriété, elle renvoie 1297307460, ce qui représente la chaîne « MSWD », si l’objet a été créé dans Microsoft Word. Cette propriété renvoie 1480803660 si l’objet a été créé dans Microsoft Excel. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la propriété <b>Application</b> renvoie le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.AnswerWizardFiles Files { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.AnswerWizardFiles Files" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As AnswerWizardFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::AnswerWizardFiles ^ Files { Microsoft::Office::Core::AnswerWizardFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.AnswerWizardFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection qui représente la liste des fichiers disponibles pour l’aide intuitive actuelle.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’objet <b>Parent</b> de l’objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetFileList">
+      <MemberSignature Language="C#" Value="public void ResetFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réinitialise la liste des fichiers pour l’aide intuitive actuelle à la liste par défaut des fichiers de l’application hôte Microsoft Office.</summary>
+        <remarks>
+          <para>Utilisez cette méthode pour restaurer toutes les entrées de la liste des fichiers AnswerWizard actuelle à la liste dans le Registre Windows pour l’application hôte. Vous pouvez établir une liste de fichiers par défaut personnalisée dans le Registre en ajoutant les noms des fichiers personnalisés à la clé de Registre appropriée.</para>
+          <para>
+            <b>Mise en garde</b> modification incorrecte du Registre peut endommager gravement votre système d’exploitation, que vous ayez à réinstaller. Microsoft ne peut pas garantir que les problèmes liés à la modification incorrecte du Registre peuvent être résolus. Avant de modifier le Registre, sauvegardez toutes les données importantes. Pour les toutes dernières informations sur l’utilisation et la protection du Registre de votre ordinateur, consultez l’aide de Microsoft Windows.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
