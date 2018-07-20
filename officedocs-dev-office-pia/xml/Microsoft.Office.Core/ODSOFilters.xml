@@ -1,0 +1,401 @@
+<Type Name="ODSOFilters" FullName="Microsoft.Office.Core.ODSOFilters">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="771b44ee2edc619dbe29f4a1c415480fbe7994ae" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659257" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ODSOFilters : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ODSOFilters implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.ODSOFilters" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ODSOFilters&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ODSOFilters : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C1534-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="9938f-101">Représente tous les filtres à appliquer à la source de données associée à la composition de fusion et publipostage.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9938f-101">Represents all the filters to apply to the data source attached to the mail merge publication.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="9938f-102">
+        <para>L’objet <b>ODSOFilters</b> est composé de <see cref="T:Microsoft.Office.Core.ODSOFilter" /> objets.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.ODSOFilters.Add(System.String,Microsoft.Office.Core.MsoFilterComparison,Microsoft.Office.Core.MsoFilterConjunction,System.String,System.Boolean)" /> méthode de l’objet <b>ODSOFilters</b> pour ajouter un nouveau critère de filtre à la requête.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.ODSOFilters.Item(System.Int32)" /> méthode pour accéder à un critère de filtre individuel.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9938f-102">
+          <para>The <b>ODSOFilters</b> object is comprised of <see cref="T:Microsoft.Office.Core.ODSOFilter" /> objects.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.ODSOFilters.Add(System.String,Microsoft.Office.Core.MsoFilterComparison,Microsoft.Office.Core.MsoFilterConjunction,System.String,System.Boolean)" /> method of the <b>ODSOFilters</b> object to add a new filter criterion to the query.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.ODSOFilters.Item(System.Int32)" /> method to access an individual filter criterion.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string Column, Microsoft.Office.Core.MsoFilterComparison Comparison, Microsoft.Office.Core.MsoFilterConjunction Conjunction, string bstrCompareTo = &quot;&quot;, bool DeferUpdate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]string Column, [in]valuetype Microsoft.Office.Core.MsoFilterComparison Comparison, [in]valuetype Microsoft.Office.Core.MsoFilterConjunction Conjunction, [in]string bstrCompareTo, [in]bool DeferUpdate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ODSOFilters.Add(System.String,Microsoft.Office.Core.MsoFilterComparison,Microsoft.Office.Core.MsoFilterConjunction,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (Column As String, Comparison As MsoFilterComparison, Conjunction As MsoFilterConjunction, Optional bstrCompareTo As String = &quot;&quot;, Optional DeferUpdate As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Column" Type="System.String" />
+        <Parameter Name="Comparison" Type="Microsoft.Office.Core.MsoFilterComparison" />
+        <Parameter Name="Conjunction" Type="Microsoft.Office.Core.MsoFilterConjunction" />
+        <Parameter Name="bstrCompareTo" Type="System.String" />
+        <Parameter Name="DeferUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Column">
+          <span data-ttu-id="9938f-103">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-103">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="9938f-104">Nom de la table dans la source de données.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-104">The name of the table in the data source.</span>
+          </span>
+        </param>
+        <param name="Comparison">
+          <span data-ttu-id="9938f-105">Requis <see cref="T:Microsoft.Office.Core.MsoFilterComparison" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-105">Required <see cref="T:Microsoft.Office.Core.MsoFilterComparison" />.</span>
+          </span>
+          <span data-ttu-id="9938f-106">La manière dont sont filtrées les données de la table.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-106">How the data in the table is filtered.</span>
+          </span>
+        </param>
+        <param name="Conjunction">
+          <span data-ttu-id="9938f-107">Requis <see cref="T:Microsoft.Office.Core.MsoFilterConjunction" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-107">Required <see cref="T:Microsoft.Office.Core.MsoFilterConjunction" />.</span>
+          </span>
+          <span data-ttu-id="9938f-108">Détermine comment ce filtre est lié à d'autres filtres dans l'objet <b>ODSOFilters</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-108">Determines how this filter relates to other filters in the <b>ODSOFilters</b> object.</span>
+          </span>
+        </param>
+        <param name="bstrCompareTo">
+          <span data-ttu-id="9938f-109">Valeur <b>String</b> facultative. </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-109">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="9938f-110">Si le <paramref name="Comparison" /> argument n’est <b>ni msoFilterComparisonIsBlank</b> ni <b>msoFilterComparisonIsNotBlank</b>, chaîne à laquelle les données du tableau sont comparées.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-110">If the <paramref name="Comparison" /> argument is something other than <b>msoFilterComparisonIsBlank</b> or <b>msoFilterComparisonIsNotBlank</b>, a string to which the data in the table is compared.</span>
+          </span>
+        </param>
+        <param name="DeferUpdate">
+          <span data-ttu-id="9938f-111">
+            <b>Boolean</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-111">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="9938f-112">Valeur par défaut est <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-112">Default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="9938f-113">Ajoute un nouveau filtre à la <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-113">Adds a new filter to the <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOFilters.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9938f-114">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-114">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9938f-115">
+            <para>Vous pouvez utiliser cette propriété avec un objet <b>Automation</b> pour renvoyer l’application conteneur de l’objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-115">
+              <para>You can use this property with an <b>Automation</b> object to return that object's container application.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOFilters.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9938f-116">Renvoie un <b>entier</b> indiquant le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-116">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOFilters.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9938f-117">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-117">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="9938f-118">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.ODSOFilters.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-118">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.ODSOFilters.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (int Index, bool DeferUpdate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]int32 Index, [in]bool DeferUpdate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ODSOFilters.Delete(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Index As Integer, Optional DeferUpdate As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="DeferUpdate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="9938f-119">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-119">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="9938f-120">Numéro du filtre à supprimer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-120">The number of the filter to delete.</span>
+          </span>
+        </param>
+        <param name="DeferUpdate">
+          <span data-ttu-id="9938f-121">
+            <b>Boolean</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-121">Optional <b>Boolean</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="9938f-122">Supprime un objet filter à partir de la <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-122">Deletes a filter object from the <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Item([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ODSOFilters.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Item(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="9938f-123">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-123">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="9938f-124">Numéro d’index de <b>ODSOFilter</b> à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-124">The index number of the <b>ODSOFilter</b> to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="9938f-125">Renvoie un membre de l’objet <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-125">Returns a member of the specified <see cref="T:Microsoft.Office.Core.ODSOFilters" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOFilters.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="9938f-126">Renvoie l’objet <b>Parent</b> de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="9938f-126">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
