@@ -1,0 +1,2228 @@
+<Type Name="TextRange2" FullName="Microsoft.Office.Core.TextRange2">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e13cb597db4d10f29174ed725d2871ab3848976a" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659436" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TextRange2 : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextRange2 implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.TextRange2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TextRange2&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TextRange2 : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0397-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="60377-101">Représente le cadre de texte d'un objet <b>Shape</b> ou <b>ShapeRange</b>.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="60377-101">Represents the text frame in a <b>Shape</b> or <b>ShapeRange</b> objects.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="60377-102">
+        <para>Cet objet contient le texte dans le cadre de texte ainsi que les propriétés et méthodes qui contrôlent l’alignement et l’ancrage du cadre de texte. Utilisez la propriété <b>TextFrame2</b> pour renvoyer un <see cref="T:Microsoft.Office.Core.TextFrame2" /> objet.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="60377-102">
+          <para>This object contains the text in the text frame as well as the properties and methods that control the alignment and anchoring of the text frame. Use the <b>TextFrame2</b> property to return a <see cref="T:Microsoft.Office.Core.TextFrame2" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPeriods">
+      <MemberSignature Language="C#" Value="public void AddPeriods ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddPeriods() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.AddPeriods" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPeriods ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPeriods();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-103">Ajoute un point (.) à droite du texte contenu dans <see cref="T:Microsoft.Office.Core.TextFrame2" /> objet pour les langues de gauche à droite et gauche pour les langues de droite à gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-103">Adds period (.) punctuation to the right side of the text contained in <see cref="T:Microsoft.Office.Core.TextFrame2" /> object for left-to-right languages and on the left side for right-to-left languages.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-104">Utilisée sans qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente l’instance actuelle de l’application Microsoft Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-104">Used without an object qualifier, this property returns an <b>Application</b> object that represents the current instance of the Microsoft Office application.</span>
+          </span>
+          <span data-ttu-id="60377-105">Utilisée avec un qualificateur d’objet, cette propriété renvoie un objet <b>Application</b> qui représente le créateur de le <see cref="T:Microsoft.Office.Core.TextFrame2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-105">Used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the <see cref="T:Microsoft.Office.Core.TextFrame2" /> object.</span>
+          </span>
+          <span data-ttu-id="60377-106">Lorsqu'elle est utilisée avec un objet OLE Automation, elle renvoie les applications de l'objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-106">When used with an OLE Automation object, it returns the object's application.</span>
+          </span>
+          <span data-ttu-id="60377-107">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-107">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-108">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-108">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundHeight">
+      <MemberSignature Language="C#" Value="public float BoundHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BoundHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.BoundHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundHeight As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BoundHeight { float get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-p102">Obtient la hauteur, en points, du cadre de délimitation du texte pour le texte spécifié. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p102">Gets the height, in points, of the text bounding box for the specified text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-111">
+            <b>Unique</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-111">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-112">
+            <para>La zone de délimitation du texte n’est pas le même que le <see cref="T:Microsoft.Office.Core.TextFrame" /> objet.  L’objet <b>TextFrame</b> représente le conteneur dans lequel le texte peut résider.  La zone de délimitation du texte représente le périmètre entourant le texte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-112">
+              <para>The text bounding box is not the same as the <see cref="T:Microsoft.Office.Core.TextFrame" /> object.  The <b>TextFrame</b> object represents the container in which the text can reside.  The text bounding box represents the perimeter immediately surrounding the text.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundLeft">
+      <MemberSignature Language="C#" Value="public float BoundLeft { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BoundLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.BoundLeft" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BoundLeft { float get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-p103">Obtient la coordonnée gauche, en points, du cadre de délimitation du texte pour le texte spécifié. Propriété en lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p103">Gets the left coordinate, in points, of the text bounding box for the specified text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-115">
+            <b>Unique</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-115">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-116">
+            <para>La zone de délimitation du texte n’est pas le même que le <see cref="T:Microsoft.Office.Core.TextFrame" /> objet.  L’objet <b>TextFrame</b> représente le conteneur dans lequel le texte peut résider.  La zone de délimitation du texte représente le périmètre entourant le texte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-116">
+              <para>The text bounding box is not the same as the <see cref="T:Microsoft.Office.Core.TextFrame" /> object.  The <b>TextFrame</b> object represents the container in which the text can reside.  The text bounding box represents the perimeter immediately surrounding the text.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundTop">
+      <MemberSignature Language="C#" Value="public float BoundTop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BoundTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.BoundTop" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BoundTop { float get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-p104">Obtient la coordonnée supérieure, en points, du cadre de délimitation du texte pour le texte spécifié. Propriété en lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p104">Gets the top coordinate, in points, of the text bounding box for the specified text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-119">
+            <b>Unique</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-119">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-120">
+            <para>La zone de délimitation du texte n’est pas le même que le <see cref="T:Microsoft.Office.Core.TextFrame" /> objet.  L’objet <b>TextFrame</b> représente le conteneur dans lequel le texte peut résider.  La zone de délimitation du texte représente le périmètre entourant le texte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-120">
+              <para>The text bounding box is not the same as the <see cref="T:Microsoft.Office.Core.TextFrame" /> object.  The <b>TextFrame</b> object represents the container in which the text can reside.  The text bounding box represents the perimeter immediately surrounding the text.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundWidth">
+      <MemberSignature Language="C#" Value="public float BoundWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BoundWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.BoundWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoundWidth As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BoundWidth { float get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-p105">Obtient la largeur, en points, du cadre de délimitation du texte pour le texte spécifié. Propriété en lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p105">Gets the width, in points, of the text bounding box for the specified text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-123">
+            <b>Unique</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-123">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-124">
+            <para>La zone de délimitation du texte n’est pas le même que le <see cref="T:Microsoft.Office.Core.TextFrame" /> objet.  L’objet <b>TextFrame</b> représente le conteneur dans lequel le texte peut résider.  La zone de délimitation du texte représente le périmètre entourant le texte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-124">
+              <para>The text bounding box is not the same as the <see cref="T:Microsoft.Office.Core.TextFrame" /> object.  The <b>TextFrame</b> object represents the container in which the text can reside.  The text bounding box represents the perimeter immediately surrounding the text.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeCase">
+      <MemberSignature Language="C#" Value="public void ChangeCase (Microsoft.Office.Core.MsoTextChangeCase Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChangeCase([in]valuetype Microsoft.Office.Core.MsoTextChangeCase Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.ChangeCase(Microsoft.Office.Core.MsoTextChangeCase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChangeCase (Type As MsoTextChangeCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ChangeCase(Microsoft::Office::Core::MsoTextChangeCase Type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoTextChangeCase" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="60377-125">Spécifie le type de modification à apporter au texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-125">Specifies the type of change to make to the text.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-126">Remplace la casse d’un <see cref="T:Microsoft.Office.Core.TextRange2" /> objet à l’une des valeurs de le <see cref="T:Microsoft.Office.Core.MsoTextChangeCase" /> énumération.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-126">Changes the case of a <see cref="T:Microsoft.Office.Core.TextRange2" /> object to one of  the values in the <see cref="T:Microsoft.Office.Core.MsoTextChangeCase" /> enumeration.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="60377-127">
+            <para>Voici des exemples de <b>valeur</b> d’énumération <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseLower" />, <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseUpper" />, et <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseTitle" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-127">
+              <para>Examples of <b>MsoTextChangeCase</b> enumeration include <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseLower" />, <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseUpper" />, and <see cref="F:Microsoft.Office.Core.MsoTextChangeCase.msoCaseTitle" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Characters">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Characters[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Characters(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Characters(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Characters(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Characters[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-128">Premier caractère de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-128">The first character in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-129">Nombre de caractères à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-129">The number of characters to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-130">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-130">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-131">
+            <para>Si les deux <paramref name="Start" /> et <paramref name="Length" /> sont tous deux omis, la plage renvoyée commence par le premier caractère et se termine par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contient un seul caractère.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par le premier caractère de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre de caractères du texte spécifié, la plage renvoyée commence par le dernier caractère de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre de caractères spécifié à partir de caractères à la fin du texte, la plage renvoyée contient tous ces caractères.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-131">
+              <para>If both <paramref name="Start" /> and <paramref name="Length" /> are omitted, the returned range starts with the first character and ends with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one character.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first character in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of characters in the specified text, the returned range starts with the last character in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of characters from the specified starting character to the end of the text, the returned range contains all those characters.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+        <example>
+          <span data-ttu-id="60377-132">
+            <para>Cet exemple permet de définir le texte pour la forme 2, de la diapositive 1, dans la présentation active, puis de définir le second caractère comme exposant avec un décalage de 20 %.</para>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-132">
+              <para>This example sets the text for shape two on slide one in the active presentation and then makes the second character a subscript character with a 20-percent offset.</para>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-133">Copie un <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-133">Copies a <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-134">Obtient le nombre d’éléments dans les <see cref="T:Microsoft.Office.Core.TextRange2" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-134">Gets the number of items in the  <see cref="T:Microsoft.Office.Core.TextRange2" /> collection.</span>
+          </span>
+          <span data-ttu-id="60377-135">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-135">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-136">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-136">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-137">Renvoie un entier 32 bits qui indique l’application dans laquelle le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-137">Gets a 32-bit integer that indicates the application in which the  <see cref="T:Microsoft.Office.Core.TextRange2" /> object was created.</span>
+          </span>
+          <span data-ttu-id="60377-138">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-138">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-139">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-139">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-140">Supprime une partie ou l'intégralité du texte d'une plage de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-140">Removes a portion or all of the text from a range of text.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-141">Supprime un <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-141">Deletes a <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Find (string FindWhat, int After = 0, Microsoft.Office.Core.MsoTriState MatchCase = Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState WholeWords = Microsoft.Office.Core.MsoTriState.msoFalse);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 Find([in]string FindWhat, [in]int32 After, [in]valuetype Microsoft.Office.Core.MsoTriState MatchCase, [in]valuetype Microsoft.Office.Core.MsoTriState WholeWords) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Find(System.String,System.Int32,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (FindWhat As String, Optional After As Integer = 0, Optional MatchCase As MsoTriState = Microsoft.Office.Core.MsoTriState.msoFalse, Optional WholeWords As MsoTriState = Microsoft.Office.Core.MsoTriState.msoFalse) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(31)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindWhat" Type="System.String" />
+        <Parameter Name="After" Type="System.Int32" />
+        <Parameter Name="MatchCase" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="WholeWords" Type="Microsoft.Office.Core.MsoTriState" />
+      </Parameters>
+      <Docs>
+        <param name="FindWhat">
+          <span data-ttu-id="60377-142">Contient le texte à rechercher.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-142">Contains the text to find.</span>
+          </span>
+        </param>
+        <param name="After">
+          <span data-ttu-id="60377-143">Spécifie, dans la plage de texte, la position à partir de laquelle commencer la recherche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-143">Specifies the point in the text range to start the search.</span>
+          </span>
+        </param>
+        <param name="MatchCase">
+          <span data-ttu-id="60377-144">Spécifie si le texte cible doit respecter la casse du texte de recherche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-144">Specifies if the target text must exactly match the case of the search text.</span>
+          </span>
+        </param>
+        <param name="WholeWords">
+          <span data-ttu-id="60377-145">Indique que la recherche portera uniquement sur des mots entiers.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-145">Specifies that only whole words will be searched.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-146">Recherche une <see cref="T:Microsoft.Office.Core.TextRange2" /> objet pour un sous-ensemble de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-146">Searches a <see cref="T:Microsoft.Office.Core.TextRange2" /> object for  a subset of text.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-147">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-147">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Font2 Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.Font2 Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Font2 ^ Font { Microsoft::Office::Core::Font2 ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Font2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-148">Renvoie un objet <b>Font</b> qui représente mise en forme pour le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-148">Returns a <b>Font</b> object that represents character formatting for the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+          <span data-ttu-id="60377-149">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-149">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-150">
+            <b>Font</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-150">
+              <b>Font</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertAfter">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 InsertAfter (string NewText = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 InsertAfter([in]string NewText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.InsertAfter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertAfter (Optional NewText As String = &quot;&quot;) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NewText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="NewText">
+          <span data-ttu-id="60377-151">Contient le texte à insérer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-151">Contains the text to be inserted.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-152">Insère du texte à droite du texte existant dans le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-152">Inserts text to the right of the existing text   in  the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-153">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-153">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertBefore">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 InsertBefore (string NewText = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 InsertBefore([in]string NewText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.InsertBefore(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertBefore (Optional NewText As String = &quot;&quot;) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NewText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="NewText">
+          <span data-ttu-id="60377-154">Contient le texte à insérer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-154">Contains the text to be inserted.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-155">Insère du texte à gauche du texte existant dans le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-155">Inserts text to the left of the existing text in the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-156">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-156">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertChartField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 InsertChartField (Microsoft.Office.Core.MsoChartFieldType ChartFieldType, string Formula = &quot;&quot;, int Position = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 InsertChartField([in]valuetype Microsoft.Office.Core.MsoChartFieldType ChartFieldType, [in]string Formula, [in]int32 Position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.InsertChartField(Microsoft.Office.Core.MsoChartFieldType,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertChartField (ChartFieldType As MsoChartFieldType, Optional Formula As String = &quot;&quot;, Optional Position As Integer = -1) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(38)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ChartFieldType" Type="Microsoft.Office.Core.MsoChartFieldType" />
+        <Parameter Name="Formula" Type="System.String" />
+        <Parameter Name="Position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ChartFieldType">
+          <span data-ttu-id="60377-157">Contient le texte à insérer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-157">Contains the text to be inserted.</span>
+          </span>
+        </param>
+        <param name="Formula">
+          <span data-ttu-id="60377-158">Spécifie une cellule (ou plage) si le <see cref="Microsoft.Office.Core.MsoChartFieldFormula" /> constante est passée pour la <paramref name="ChartFieldType" /> paramètre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-158">Specifies a cell (or range) if the <see cref="Microsoft.Office.Core.MsoChartFieldFormula" /> constant is passed in for the <paramref name="ChartFieldType" /> parameter.</span>
+          </span>
+        </param>
+        <param name="Position">
+          <span data-ttu-id="60377-159">Spécifie la position du caractère où le champ de graphique est inséré.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-159">Specifies the character position where the chart field is inserted.</span>
+          </span>
+          <span data-ttu-id="60377-160">La valeur par défaut consiste à ajouter le champ à la fin du texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-160">The default is to append the field to the end of the text.</span>
+          </span>
+          <span data-ttu-id="60377-161">Si la valeur de position est hors plage, la valeur par défaut est utilisée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-161">If the position value is out of range, the default is used.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-162">Insère un champ dans le corps d’une étiquette de données dans un graphique.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-162">Inserts a field into the body of a data label in a chart.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-163">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-163">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="60377-164">
+            <para>Cette méthode s’applique uniquement aux étiquettes de données dans un graphique. L’appel de cette méthode sur n’importe quel autre type de <a href="a6a59c9b-9b64-c1e2-2e98-a1f99025c877.htm">Microsoft.Office.Core.TextRange2</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-164">
+              <para>This method applies only to data labels in a chart. Calling this method on any other kind of <a href="a6a59c9b-9b64-c1e2-2e98-a1f99025c877.htm">Microsoft.Office.Core.TextRange2</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertSymbol">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 InsertSymbol (string FontName, int CharNumber, Microsoft.Office.Core.MsoTriState Unicode = Microsoft.Office.Core.MsoTriState.msoFalse);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 InsertSymbol([in]string FontName, [in]int32 CharNumber, [in]valuetype Microsoft.Office.Core.MsoTriState Unicode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.InsertSymbol(System.String,System.Int32,Microsoft.Office.Core.MsoTriState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertSymbol (FontName As String, CharNumber As Integer, Optional Unicode As MsoTriState = Microsoft.Office.Core.MsoTriState.msoFalse) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="CharNumber" Type="System.Int32" />
+        <Parameter Name="Unicode" Type="Microsoft.Office.Core.MsoTriState" />
+      </Parameters>
+      <Docs>
+        <param name="FontName">
+          <span data-ttu-id="60377-165">Nom du jeu de polices.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-165">The name of the font set.</span>
+          </span>
+        </param>
+        <param name="CharNumber">
+          <span data-ttu-id="60377-166">Numéro du symbole.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-166">The number of the symbol.</span>
+          </span>
+        </param>
+        <param name="Unicode">
+          <span data-ttu-id="60377-167">Indique si la valeur du symbole est spécifiée en tant que valeur Unicode.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-167">Indicates whether the value of the symbol is specified as a unicode value.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-168">Insère un symbole du jeu de polices spécifié dans la plage de texte représentée par le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-168">Inserts a symbol from the specified font set into the range of text represented by the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-169">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-169">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::TextRange2 ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="60377-170">Numéro d'index de la plage de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-170">The index number of the text range.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-171">Obtient la plage de texte spécifiée par le numéro d’index à partir de la <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-171">Gets the range of text specified by the index number from the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-172">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-172">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoLanguageID LanguageID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoLanguageID LanguageID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.LanguageID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LanguageID As MsoLanguageID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoLanguageID LanguageID { Microsoft::Office::Core::MsoLanguageID get(); void set(Microsoft::Office::Core::MsoLanguageID value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoLanguageID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-173">Obtient ou définit le <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> valeur de la <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-173">Gets or sets the <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> value of the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+          <span data-ttu-id="60377-174">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-174">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-175">
+            <b>MsoLanguageID</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-175">
+              <b>MsoLanguageID</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-176">Obtient la longueur d’une plage de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-176">Gets the length of a text range.</span>
+          </span>
+          <span data-ttu-id="60377-177">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-177">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-178">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-178">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Lines[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Lines(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Lines(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lines(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Lines[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-179">Première ligne de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-179">The first line in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-180">Nombre de lignes à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-180">The number of lines to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-181">Renvoie le sous-ensemble spécifié de lignes de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-181">Returns the specified subset of text lines.</span>
+          </span>
+          <span data-ttu-id="60377-182">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-182">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-183">
+            <para>Si les deux <paramref name="Start" /> et <paramref name="Length" /> sont tous deux omis, la plage renvoyée commence par la première ligne et se termine par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contient une seule ligne.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par la première ligne de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre de lignes du texte spécifié, la plage renvoyée commence par la dernière ligne de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre de lignes à partir de la ligne de départ spécifiée jusqu'à la fin du texte, la plage renvoyée contient toutes ces lignes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-183">
+              <para>If both <paramref name="Start" /> and <paramref name="Length" /> are omitted, the returned range starts with the first line and ends with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one line.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first line in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of lines in the specified text, the returned range starts with the last line in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of lines from the specified starting line to the end of the text, the returned range contains all those lines.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LtrRun">
+      <MemberSignature Language="C#" Value="public void LtrRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LtrRun() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.LtrRun" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LtrRun ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LtrRun();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(36)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-184">Renvoie un <see cref="T:Microsoft.Office.Core.TextRange2" /> object qui représente le sous-ensemble spécifié de texte de gauche à droite s’exécute.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-184">Returns a <see cref="T:Microsoft.Office.Core.TextRange2" /> object that represents the specified subset of left-to-right text runs.</span>
+          </span>
+          <span data-ttu-id="60377-185">Une séquence de texte se compose d’une plage de caractères qui partagent les mêmes attributs de police.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-185">A text run consists of a range of characters that share the same font attributes.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MathZones">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 MathZones[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 MathZones(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.MathZones(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MathZones(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ MathZones[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(37)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(37)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">To be added.</param>
+        <param name="Length">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ParagraphFormat2 ParagraphFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ParagraphFormat2 ParagraphFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.ParagraphFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParagraphFormat As ParagraphFormat2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ParagraphFormat2 ^ ParagraphFormat { Microsoft::Office::Core::ParagraphFormat2 ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ParagraphFormat2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-186">Renvoie le paragraphe de la mise en forme pour le texte spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-186">Returns the paragraph formatting for the specified text.</span>
+          </span>
+          <span data-ttu-id="60377-187">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-187">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ParagraphFormat2" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paragraphs">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Paragraphs[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Paragraphs(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Paragraphs(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Paragraphs(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Paragraphs[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-188">Premier paragraphe de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-188">The first paragraph in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-189">Nombre de paragraphes à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-189">The number of paragraphs to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-190">Obtient le sous-ensemble de paragraphes de texte spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-190">Gets the specified subset of text paragraphs.</span>
+          </span>
+          <span data-ttu-id="60377-191">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-191">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-192">
+            <para>Si les deux <paramref name="Start" /> et <paramref name="Length" /> sont tous deux omis, la plage renvoyée commence par le premier paragraphe et se termine par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contient un paragraphe.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par le premier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre de paragraphes du texte spécifié, la plage renvoyée commence par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre de paragraphes à partir du paragraphe de départ spécifié jusqu'à la fin du texte, la plage renvoyée contient tous ces paragraphes.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-192">
+              <para>If both <paramref name="Start" /> and <paramref name="Length" /> are omitted, the returned range starts with the first paragraph and ends with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one paragraph.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of paragraphs in the specified text, the returned range starts with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of paragraphs from the specified starting paragraph to the end of the text, the returned range contains all those paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-193">Obtient l’objet parent de le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-193">Gets the parent object for the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+          <span data-ttu-id="60377-194">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-194">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-195">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-195">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Paste ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 Paste() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Function Paste () As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::TextRange2 ^ Paste();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-196">Colle le contenu du Presse-papiers dans le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-196">Pastes the contents of  the Clipboard into the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-197">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-197">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasteSpecial">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 PasteSpecial (Microsoft.Office.Core.MsoClipboardFormat Format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 PasteSpecial([in]valuetype Microsoft.Office.Core.MsoClipboardFormat Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.PasteSpecial(Microsoft.Office.Core.MsoClipboardFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PasteSpecial (Format As MsoClipboardFormat) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::TextRange2 ^ PasteSpecial(Microsoft::Office::Core::MsoClipboardFormat Format);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Format" Type="Microsoft.Office.Core.MsoClipboardFormat" />
+      </Parameters>
+      <Docs>
+        <param name="Format">
+          <span data-ttu-id="60377-198">Détermine le format du contenu du Presse-papiers lorsqu'il est inséré dans le document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-198">Determines the format for the Clipboard contents when they're inserted into the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-199">Remplace la plage de texte par le contenu du Presse-papiers au format spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-199">Replaces the text range with the contents of the Clipboard in the format specified.</span>
+          </span>
+          <span data-ttu-id="60377-200">Si le collage réussit, cette méthode renvoie un <see cref="T:Microsoft.Office.Core.TextRange2" /> objet, y compris la plage de texte qui a été collée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-200">If the paste succeeds, this method returns a <see cref="T:Microsoft.Office.Core.TextRange2" /> object including the text range that was pasted.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-201">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-201">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePeriods">
+      <MemberSignature Language="C#" Value="public void RemovePeriods ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemovePeriods() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.RemovePeriods" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePeriods ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePeriods();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-202">Supprime tous les points (.) du texte de la <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-202">Removes all period (.) punctuation from the text in the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Replace (string FindWhat, string ReplaceWhat, int After = 0, Microsoft.Office.Core.MsoTriState MatchCase = Microsoft.Office.Core.MsoTriState.msoFalse, Microsoft.Office.Core.MsoTriState WholeWords = Microsoft.Office.Core.MsoTriState.msoFalse);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 Replace([in]string FindWhat, [in]string ReplaceWhat, [in]int32 After, [in]valuetype Microsoft.Office.Core.MsoTriState MatchCase, [in]valuetype Microsoft.Office.Core.MsoTriState WholeWords) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Replace(System.String,System.String,System.Int32,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Replace (FindWhat As String, ReplaceWhat As String, Optional After As Integer = 0, Optional MatchCase As MsoTriState = Microsoft.Office.Core.MsoTriState.msoFalse, Optional WholeWords As MsoTriState = Microsoft.Office.Core.MsoTriState.msoFalse) As TextRange2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FindWhat" Type="System.String" />
+        <Parameter Name="ReplaceWhat" Type="System.String" />
+        <Parameter Name="After" Type="System.Int32" />
+        <Parameter Name="MatchCase" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="WholeWords" Type="Microsoft.Office.Core.MsoTriState" />
+      </Parameters>
+      <Docs>
+        <param name="FindWhat">
+          <span data-ttu-id="60377-203">Texte à rechercher.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-203">The text to search for.</span>
+          </span>
+        </param>
+        <param name="ReplaceWhat">
+          <span data-ttu-id="60377-204">Texte de remplacement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-204">The text you want to replace the found text with.</span>
+          </span>
+        </param>
+        <param name="After">
+          <span data-ttu-id="60377-205">La position du caractère (dans la plage de texte spécifiée) après lequel vous souhaitez rechercher l’occurrence suivante du <paramref name="FindWhat" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-205">The position of the character (in the specified text range) after which you want to search for the next occurrence of <paramref name="FindWhat" />.</span>
+          </span>
+          <span data-ttu-id="60377-206">Par exemple, si vous souhaitez rechercher à partir du cinquième caractère de la plage de texte, spécifiez 4 pour <paramref name="After" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-206">For example, if you want to search from the fifth character of the text range, specify 4 for <paramref name="After" />.</span>
+          </span>
+          <span data-ttu-id="60377-207">Si cet argument est omis, le premier caractère de la plage de texte est utilisé comme point de départ pour la recherche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-207">If this argument is omitted, the first character of the text range is used as the starting point for the search.</span>
+          </span>
+        </param>
+        <param name="MatchCase">
+          <span data-ttu-id="60377-208">Détermine si la recherche doit tenir compte de la casse.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-208">Determines whether a distinction is made on the basis of case.</span>
+          </span>
+        </param>
+        <param name="WholeWords">
+          <span data-ttu-id="60377-209">Détermine si la recherche doit porter uniquement sur des mots entiers.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-209">Determines whether only whole words are searched.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-210">Recherche du texte spécifique dans une plage de texte, remplace le texte trouvé par une chaîne spécifiée et renvoie un <see cref="T:Microsoft.Office.Core.TextRange2" /> object qui représente la première occurrence du texte recherché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-210">Finds specific text in a text range, replaces the found text with a specified string, and returns a <see cref="T:Microsoft.Office.Core.TextRange2" /> object that represents the first occurrence of the found text.</span>
+          </span>
+          <span data-ttu-id="60377-211">Renvoie la <b>valeur Nothing</b> si aucune correspondance n’est trouvée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-211">Returns <b>Nothing</b> if no match is found.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="60377-212">
+            <b>TextRange2</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-212">
+              <b>TextRange2</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotatedBounds">
+      <MemberSignature Language="C#" Value="public void RotatedBounds (out float X1, out float Y1, out float X2, out float Y2, out float X3, out float Y3, out float x4, out float y4);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RotatedBounds([out] float32&amp; X1, [out] float32&amp; Y1, [out] float32&amp; X2, [out] float32&amp; Y2, [out] float32&amp; X3, [out] float32&amp; Y3, [out] float32&amp; x4, [out] float32&amp; y4) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.RotatedBounds(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RotatedBounds (ByRef X1 As Single, ByRef Y1 As Single, ByRef X2 As Single, ByRef Y2 As Single, ByRef X3 As Single, ByRef Y3 As Single, ByRef x4 As Single, ByRef y4 As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotatedBounds([Runtime::InteropServices::Out] float % X1, [Runtime::InteropServices::Out] float % Y1, [Runtime::InteropServices::Out] float % X2, [Runtime::InteropServices::Out] float % Y2, [Runtime::InteropServices::Out] float % X3, [Runtime::InteropServices::Out] float % Y3, [Runtime::InteropServices::Out] float % x4, [Runtime::InteropServices::Out] float % y4);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(33)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="X1" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="Y1" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="X2" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="Y2" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="X3" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="Y3" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="x4" Type="System.Single&amp;" RefType="out" />
+        <Parameter Name="y4" Type="System.Single&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="X1">
+          <span data-ttu-id="60377-213">Renvoie la position (en points) de la coordonnée X du premier sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-213">Returns the position (in points) of the X coordinate of the first vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="60377-214">Renvoie la position (en points) de la coordonnée Y du premier sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-214">Returns the position (in points) of the Y coordinate of the first vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="X2">
+          <span data-ttu-id="60377-215">Renvoie la position (en points) de la coordonnée X du deuxième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-215">Returns the position (in points) of the X coordinate of the second vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="Y2">
+          <span data-ttu-id="60377-216">Renvoie la position (en points) de la coordonnée Y du deuxième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-216">Returns the position (in points) of the Y coordinate of the second vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="X3">
+          <span data-ttu-id="60377-217">Renvoie la position (en points) de la coordonnée X du troisième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-217">Returns the position (in points) of the X coordinate of the third vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="Y3">
+          <span data-ttu-id="60377-218">Renvoie la position (en points) de la coordonnée Y du troisième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-218">Returns the position (in points) of the Y coordinate of the third vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="x4">
+          <span data-ttu-id="60377-219">Renvoie la position (en points) de la coordonnée X du quatrième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-219">Returns the position (in points) of the X coordinate of the fourth vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <param name="y4">
+          <span data-ttu-id="60377-220">Renvoie la position (en points) de la coordonnée Y du quatrième sommet du cadre de délimitation du texte pour la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-220">Returns the position (in points) of the Y coordinate of the fourth vertex of the bounding box for the text within the specified text range.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-p120">Cette méthode permet d'obtenir les coordonnées des sommets du cadre de délimitation du texte pour la plage de texte spécifiée. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p120">Gets the coordinates of the vertices of the text bounding box for the specified text range. Read-only.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="60377-223">
+            <para>La zone de délimitation du texte n’est pas le même que le <see cref="T:Microsoft.Office.Core.TextFrame2" /> objet.  L’objet <b>TextFrame2</b> représente le conteneur dans lequel le texte peut résider.  La zone de délimitation du texte représente le périmètre entourant le texte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-223">
+              <para>The text bounding box is not the same as the <see cref="T:Microsoft.Office.Core.TextFrame2" /> object.  The <b>TextFrame2</b> object represents the container in which the text can reside.  The text bounding box represents the perimeter immediately surrounding the text.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RtlRun">
+      <MemberSignature Language="C#" Value="public void RtlRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RtlRun() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.RtlRun" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RtlRun ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RtlRun();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(35)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-224">Renvoie un <see cref="T:Microsoft.Office.Core.TextRange2" /> exécute object qui représente le sous-ensemble spécifié de texte de droite à gauche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-224">Returns a <see cref="T:Microsoft.Office.Core.TextRange2" /> object that represents the specified subset of right-to-left text runs.</span>
+          </span>
+          <span data-ttu-id="60377-225">Une séquence de texte se compose d’une plage de caractères qui partagent les mêmes attributs de police.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-225">A text run consists of a range of characters that share the same font attributes.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Runs">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Runs[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Runs(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Runs(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Runs(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Runs[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-226">Première exécution de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-226">The first run in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-227">Nombre d'exécutions à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-227">The number of runs to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-228">Obtient le sous-ensemble de portions de texte spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-228">Gets the specified subset of text runs.</span>
+          </span>
+          <span data-ttu-id="60377-229">Une séquence de texte se compose d’une plage de caractères qui partagent les mêmes attributs de police.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-229">A text run consists of a range of characters that share the same font attributes.</span>
+          </span>
+          <span data-ttu-id="60377-230">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-230">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-231">
+            <para>Si les paramètres Start et Length sont tous deux omis, la plage renvoyée commence par la première suite et se termine par le dernier paragraphe de la plage spécifiée.  </para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contient une exécution.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par la première exécution de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre d’exécutions dans le texte spécifié, la plage renvoyée commence par la dernière exécution de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre d’exécutions de la suite de départ spécifiée jusqu'à la fin du texte, la plage renvoyée contient ces exécutions.</para> Exécuter 
+          <para>A se compose de tous les caractères à partir du premier caractère après un changement de police pour le caractère de la dernière seconde ayant les mêmes attributs de police. Par exemple, considérez la phrase suivante :</para><para>ce <paramref name="italic" /> word n’est pas en gras.</para><para>Dans cette phrase, la première exécution est constituée du mot « » que si l’espace après le mot « This » n’est pas en italique (si l’espace est en italique, la première exécution n'est que le premier trois caractères, ou « IC »). De même, la seconde exécution contient le mot « italique » uniquement si l’espace après le mot est en italique.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-231">
+              <para>If both Start and Length are omitted, the returned range starts with the first run and ends with the last paragraph in the specified range.  </para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one run.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first run in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of runs in the specified text, the returned range starts with the last run in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of runs from the specified starting run to the end of the text, the returned range contains all those runs.</para>
+              <para>A run consists of all characters from the first character after a font change to the second-to-last character with the same font attributes. For example, consider the following sentence:</para>
+              <para>This <paramref name="italic" /> word is not bold.</para>
+              <para>In the preceding sentence, the first run consists of the word "This" only if the space after the word "This" isn't formatted as italic (if the space is italic, the first run is only the first three characters, or "Thi"). Likewise, the second run contains the word "italic" only if the space after the word is formatted as italic.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-232">Sélectionne le <see cref="T:Microsoft.Office.Core.TextRange2" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-232">Selects the <see cref="T:Microsoft.Office.Core.TextRange2" /> object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sentences">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Sentences[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Sentences(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Sentences(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sentences(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Sentences[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-233">Première phrase de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-233">The first sentence in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-234">Nombre de phrases à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-234">The number of sentences to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-235">Renvoie le sous-ensemble spécifié de phrases de texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-235">Returns the specified subset of text sentences.</span>
+          </span>
+          <span data-ttu-id="60377-236">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-236">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-237">
+            <para>Si les deux <paramref name="Start" /> et <paramref name="Length" /> sont tous deux omis, la plage renvoyée commence par la première phrase et se termine par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contienne une phrase.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par la première phrase de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre de phrases du texte spécifié, la plage renvoyée commence par la dernière phrase de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre de phrases à partir de la phrase de départ spécifiée jusqu'à la fin du texte, la plage renvoyée contient toutes ces phrases.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-237">
+              <para>If both <paramref name="Start" /> and <paramref name="Length" /> are omitted, the returned range starts with the first sentence and ends with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one sentence.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first sentence in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of sentences in the specified text, the returned range starts with the last sentence in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of sentences from the specified starting sentence to the end of the text, the returned range contains all those sentences.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+        <example>
+          <span data-ttu-id="60377-238">
+            <para>Cet exemple montre comment mettre en gras la seconde phrase du second paragraphe de la forme 2 de la diapositive 1 de la présentation PowerPoint active.</para>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-238">
+              <para>This example formats as bold the second sentence in the second paragraph in shape two on slide one in the active PowerPoint presentation.  </para>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public int Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Start" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Start" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Start { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-239">Obtient le point de départ de la plage de texte spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-239">Gets the starting point of the specified text range.</span>
+          </span>
+          <span data-ttu-id="60377-240">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-240">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-241">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-241">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Text" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-p125">Extrait ou définit une valeur <b>String</b> qui représente le texte dans une plage de texte. En lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-p125">Gets or sets a <b>String</b> value that represents the text in a text range. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="60377-244">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-244">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimText">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 TrimText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.TextRange2 TrimText() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.TextRange2.TrimText" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrimText () As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::TextRange2 ^ TrimText();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="60377-245">Renvoie le texte spécifié sans les espaces de fin.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-245">Returns the specified text minus any trailing spaces.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Words">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextRange2 Words[int Start = -1, int Length = -1] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextRange2 Words(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.TextRange2.Words(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Words(Optional Start As Integer = -1, Optional Length As Integer = -1) As TextRange2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextRange2 ^ Words[int, int] { Microsoft::Office::Core::TextRange2 ^ get(int Start, int Length); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Start">
+          <span data-ttu-id="60377-246">Premier mot de la plage renvoyée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-246">The first word in the returned range.</span>
+          </span>
+        </param>
+        <param name="Length">
+          <span data-ttu-id="60377-247">Nombre de mots à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-247">The number of words to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="60377-248">Obtient le sous-ensemble spécifié de mots du texte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-248">Gets the specified subset of text words.</span>
+          </span>
+          <span data-ttu-id="60377-249">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-249">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextRange2" />
+        </value>
+        <remarks>
+          <span data-ttu-id="60377-250">
+            <para>Si les deux <paramref name="Start" /> et <paramref name="Length" /> sont tous deux omis, la plage renvoyée commence au premier mot et se termine par le dernier paragraphe de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est spécifié mais <paramref name="Length" /> est omis, la plage renvoyée contient un seul mot.</para>
+            <para>Si <paramref name="Length" /> est spécifié mais <paramref name="Start" /> est omis, la plage renvoyée commence par le premier mot de la plage spécifiée.</para>
+            <para>Si <paramref name="Start" /> est supérieur au nombre de mots du texte spécifié, la plage renvoyée commence par le dernier mot de la plage spécifiée.</para>
+            <para>Si <paramref name="Length" /> est supérieur au nombre de mots à partir du démarrage de word à la fin du texte, la plage renvoyée contient tous ces mots.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="60377-250">
+              <para>If both <paramref name="Start" /> and <paramref name="Length" /> are omitted, the returned range starts with the first word and ends with the last paragraph in the specified range.</para>
+              <para>If <paramref name="Start" /> is specified but <paramref name="Length" /> is omitted, the returned range contains one word.</para>
+              <para>If <paramref name="Length" /> is specified but <paramref name="Start" /> is omitted, the returned range starts with the first word in the specified range.</para>
+              <para>If <paramref name="Start" /> is greater than the number of words in the specified text, the returned range starts with the last word in the specified range.</para>
+              <para>If <paramref name="Length" /> is greater than the number of words from the specified starting word to the end of the text, the returned range contains all those words.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

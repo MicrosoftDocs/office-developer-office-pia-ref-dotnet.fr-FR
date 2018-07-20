@@ -1,0 +1,347 @@
+<Type Name="SmartDocument" FullName="Microsoft.Office.Core.SmartDocument">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f1baad263eb43139b77bb1be53d230555de79afc" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658916" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SmartDocument : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartDocument implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SmartDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SmartDocument&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SmartDocument : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0377-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="f545a-101">La propriété <b>SmartDocument</b> de l’objet Microsoft Office Word 2003 <b>Document</b> et l’objet Microsoft Office Excel 2003 <b>classeur</b> renvoie un objet <b>SmartDocument</b> .</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f545a-101">The <b>SmartDocument</b> property of the Microsoft Office Word 2003 <b>Document</b> object and the Microsoft Office Excel 2003 <b>Workbook</b> object returns a <b>SmartDocument</b> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="f545a-102">
+        <para>Utilisez l’objet <b>SmartDocument</b> pour gérer le Kit d’extension XML attaché au document actif.</para>
+        <para>Utiliser le <b>SmartDocument</b> de l’objet <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" /> et <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" /> propriétés pour extraire des informations sur le Kit d’extension XML attaché au document actif ou du classeur. Utiliser le <see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" /> méthode pour autoriser l’utilisateur à sélectionner un kit d’extension XML disponible à partir d’une liste à associer au document actif ou du classeur. Utiliser le <see cref="M:Microsoft.Office.Core.SmartDocument.RefreshPane" /> méthode pour actualiser le volet de tâches Actions de Document du document actif.</para> Modèle d’objet 
+      <para>la <b>SmartDocument</b> est disponible ou non un document possède un kit d’extension XML attaché. La propriété <b>SmartDocument</b> des objets <b>Document</b> ou le <b>classeur</b> ne renvoie pas Nothing lorsque le document actif ne comporte aucun kit d’extension XML attaché. Examinez la propriété <b>SolutionID</b> pour déterminer si le document actif possède un kit d’extension XML attaché.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f545a-102">
+          <para>Use the <b>SmartDocument</b> object to manage the XML expansion pack attached to the active document.</para>
+          <para>Use the <b>SmartDocument</b> object's <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" /> and the <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" /> properties to retrieve information about the XML expansion pack attached to the active document or workbook. Use the <see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" /> method to allow the user to select an available XML expansion pack from a list to attach to the active document or workbook. Use the <see cref="M:Microsoft.Office.Core.SmartDocument.RefreshPane" /> method to refresh the smart document's Document Actions task pane.</para>
+          <para>The <b>SmartDocument</b> object model is available whether or not a document has an XML expansion pack attached. The <b>SmartDocument</b> property of the <b>Document</b> or <b>Workbook</b> objects does not return Nothing when the active document has no XML expansion pack attached. Examine the <b>SolutionID</b> property to determine whether the active document has an XML expansion pack attached.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="f545a-103">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="f545a-104">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="f545a-105">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.SmartDocument.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SmartDocument.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickSolution">
+      <MemberSignature Language="C#" Value="public void PickSolution (bool ConsiderAllSchemas = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PickSolution([in]bool ConsiderAllSchemas) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PickSolution (Optional ConsiderAllSchemas As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ConsiderAllSchemas" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ConsiderAllSchemas">
+          <span data-ttu-id="f545a-106">
+            <b>Boolean</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-106">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="f545a-107">
+            <b>True :</b> affiche tous les kits d’extension XML disponibles installés sur l’ordinateur de l’utilisateur.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-107">
+              <b>True</b> displays all available XML expansion packs installed on the user's computer.</span>
+          </span>
+          <span data-ttu-id="f545a-108">
+            <b>False</b> affiche uniquement les kits d’extension XML applicables au document actif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-108">
+              <b>False</b> displays only XML expansion packs applicable to the active document.</span>
+          </span>
+          <span data-ttu-id="f545a-109">Valeur par défaut est <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-109">Default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="f545a-110">Affiche une boîte de dialogue qui permet à l’utilisateur de choisir un kit d’extension XML disponible à attacher au document actif de Microsoft Office Word 2003 ou classeur Microsoft Office Excel 2003.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-110">Displays a dialog box which allows the user to choose an available XML expansion pack to attach to the active Microsoft Office Word 2003 document or Microsoft Office Excel 2003 workbook.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="f545a-111">
+            <para>Utilisez la méthode <b>PickSolution</b> pour permettre à l’utilisateur de sélectionner un kit d’extension XML dans une liste. Le schéma attaché au document actif ou du classeur détermine les kits d’extension XML sont applicables.</para> Méthode 
+          <para>le <b>PickSolution</b> ne renvoie pas une valeur pour indiquer si l’utilisateur a sélectionné un kit d’extension XML ou cliqué sur Annuler dans la boîte de dialogue. Vérifier la <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" /> propriété après avoir appelé <b>PickSolution</b> pour déterminer si un kit d’extension XML a été attaché.</para><para>Si le développeur de documents dynamiques n’a pas spécifié « targetApplication » dans le fichier manifeste du pack d’expansion XML, la liste affichée par <b>PickSolution</b> peut comprendre des kits d’extension XML qui ne sont pas ciblés à l’application active ; par exemple, un Utilisateur d’Excel peut voir kits d’extension XML exclusivement ciblés sur Word. Dans ce cas, l’utilisateur peut sélectionner un kit d’extension XML qui n’est pas approprié pour l’application active.</para><para>Pour plus d’informations sur les documents dynamiques ou des kits d’extension XML destinés aux documents dynamiques, consultez le Kit de développement (SDK) Smart Document sur le site Web Microsoft Developer Network (MSDN).</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-111">
+              <para>Use the <b>PickSolution</b> method to allow the user to select an XML expansion pack from a list. The schema attached to the active document or workbook determines which XML expansion packs are applicable.</para>
+              <para>The <b>PickSolution</b> method does not return a value to indicate whether the user selected an XML expansion pack or clicked Cancel in the dialog box. Check the <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionID" /> property after calling <b>PickSolution</b> to determine whether an XML expansion pack has been attached.</para>
+              <para>If the smart document developer has failed to specify "targetApplication" in the XML expansion pack manifest file, the list displayed by <b>PickSolution</b> may include XML expansion packs that are not targeted to the active application; for example, an Excel user may see XML expansion packs targeted exclusively to Word. In these circumstances, the user may select an XML expansion pack that is not appropriate for the active application.</para>
+              <para>For more information on smart documents or XML expansion packs for smart documents, please see the Smart Document Software Development Kit (SDK) on the Microsoft Developer Network (MSDN) Web site.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshPane">
+      <MemberSignature Language="C#" Value="public void RefreshPane ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshPane() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SmartDocument.RefreshPane" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshPane ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshPane();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="f545a-112">Actualise le volet Office Actions de Document pour le document actif de Microsoft Office Word 2003 ou un classeur Microsoft Office Excel 2003.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-112">Refreshes the Document Actions task pane for the active Microsoft Office Word 2003 document or Microsoft Office Excel 2003 workbook.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="f545a-113">
+            <para>La méthode <b>RefreshPane</b> entraîne une erreur si le document actif ne dispose pas d’un kit d’extension XML attaché.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-113">
+              <para>The <b>RefreshPane</b> method raises an error if the active document does not have an XML expansion pack attached.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SolutionID">
+      <MemberSignature Language="C#" Value="public string SolutionID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SolutionID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.SolutionID" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="f545a-114">Renvoie ou définit l’ID, souvent un identificateur global unique (GUID), qui identifie le Kit d’extension XML attaché au document actif de Microsoft Office Word 2003 ou classeur Microsoft Office Excel 2003.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-114">Returns or sets the ID, often a globally unique identifier (GUID), which identifies the XML expansion pack attached to the active Microsoft Office Word 2003 document or Microsoft Office Excel 2003 workbook.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="f545a-115">
+            <para>La propriété <b>SolutionID</b> renvoie une chaîne vide ou « None » lorsque aucun kit d’extension XML n’est attaché au document actif.</para>
+            <para>Fournir les valeurs appropriées pour <b>SolutionID</b> et <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" /> pack de propriétés pour attacher une d’extension XML disponible au document actif afin de le transformer en document dynamique sans l’aide de la <see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" /> méthode. Définir les propriétés <b>SolutionID</b> et <b>SolutionURL</b> des chaînes vides pour supprimer le Kit d’extension XML attaché.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-115">
+              <para>The <b>SolutionID</b> property returns an empty string or "None" when no XML expansion pack is attached to the active document.</para>
+              <para>Provide appropriate values for the <b>SolutionID</b> and <see cref="P:Microsoft.Office.Core.SmartDocument.SolutionURL" /> properties to attach an available XML expansion pack to the active document to transform it into a smart document without using the <see cref="M:Microsoft.Office.Core.SmartDocument.PickSolution(System.Boolean)" /> method. Set the <b>SolutionID</b> and <b>SolutionURL</b> properties to empty strings to remove the attached XML expansion pack.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SolutionURL">
+      <MemberSignature Language="C#" Value="public string SolutionURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SolutionURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartDocument.SolutionURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="f545a-116">Cette propriété renvoie ou définit une URL absolue qui fournit le chemin d’accès complet pour le fichier du Kit d’extension XML attaché au document actif de Microsoft Office Word 2003 ou classeur Microsoft Office Excel 2003.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-116">Returns or sets an absolute URL that provides the complete path to the XML expansion pack file attached to the active Microsoft Office Word 2003 document or Microsoft Office Excel 2003 workbook.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="f545a-117">
+            <para>La propriété <b>SolutionURL</b> renvoie une chaîne vide lorsque aucun kit d’extension XML n’est attaché au document actif.</para>
+            <para>Fournit les valeurs appropriées pour les propriétés <b>SolutionID</b> et <b>SolutionURL</b> afin d’attacher une d’extension XML disponible au document actif à emporter transformer en un document dynamique sans l’aide de la méthode <b>PickSolution</b> . Définir les propriétés <b>SolutionID</b> et <b>SolutionURL</b> des chaînes vides pour supprimer le Kit d’extension XML attaché</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f545a-117">
+              <para>The <b>SolutionURL</b> property returns an empty string when no XML expansion pack is attached to the active document.</para>
+              <para>Provide appropriate values for the <b>SolutionID</b> and <b>SolutionURL</b> properties to attach an available XML expansion pack to the active document and transform it into a smart document without using the <b>PickSolution</b> method. Set the <b>SolutionID</b> and <b>SolutionURL</b> properties to empty strings to remove the attached XML expansion pack</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

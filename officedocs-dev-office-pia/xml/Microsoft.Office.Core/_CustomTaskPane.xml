@@ -1,0 +1,539 @@
+<Type Name="_CustomTaskPane" FullName="Microsoft.Office.Core._CustomTaskPane">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="54421a9151e347dcd5f463af33539b23e21495a1" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659440" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CustomTaskPane" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CustomTaskPane" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CustomTaskPane" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CustomTaskPane" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CustomTaskPane" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C033B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="da877-101">Représente un volet Office personnalisé dans l’application conteneur.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="da877-101">Represents a custom task pane in the container application.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="da877-102">
+        <para>
+          <b>Remarque</b>: vous pouvez créer des volets Office personnalisés dans n’importe quel langage prenant en charge COM et vous permet de créer des fichiers de bibliothèque de liens dynamiques (DLL). Par exemple, Microsoft Visual Basic® 6.0, Microsoft Visual Basic .NET, Microsoft, Microsoft Visual C++ .NET et Microsoft Visual C#®. Toutefois, Microsoft Visual Basic pour Applications (VBA) ne prend pas en charge la création de volets Office personnalisés.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="da877-102">
+          <para>
+            <b>Note</b>: You can create custom task panes in any language that supports COM and allows you to create dynamic-linked library (DLL) files. For example, Microsoft Visual Basic® 6.0, Microsoft Visual Basic .NET, Microsoft Visual C++®, Microsoft Visual C++ .NET, and Microsoft Visual C#®. However, Microsoft Visual Basic for Applications (VBA) does not support creating custom task panes. </para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-103">Obtient l’objet <b>Application</b> de l’application hôte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-103">Gets the <b>Application</b> object of the host application.</span>
+          </span>
+          <span data-ttu-id="da877-104">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-105">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-105">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentControl">
+      <MemberSignature Language="C#" Value="public object ContentControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ContentControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.ContentControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentControl As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ContentControl { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-p102">Obtient l’instance de contrôle Microsoft ActiveX® affichée dans le cadre du volet Office personnalisé. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-p102">Gets the Microsoft ActiveX® control instance displayed in the custom task pane frame. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-108">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-108">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="da877-109">
+            <para>Cette propriété est définie une fois lors de la création.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-109">
+              <para>This property is set once at creation.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomTaskPane.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-110">Supprime le volet Office personnalisé actif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-110">Deletes the active custom task pane.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoCTPDockPosition DockPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoCTPDockPosition DockPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.DockPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property DockPosition As MsoCTPDockPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCTPDockPosition DockPosition { Microsoft::Office::Core::MsoCTPDockPosition get(); void set(Microsoft::Office::Core::MsoCTPDockPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCTPDockPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-111">Obtient ou définit une valeur énumérée spécifiant la position ancrée d’un <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-111">Gets or sets an enumerated value specifying the docked position of a <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object.</span>
+          </span>
+          <span data-ttu-id="da877-112">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-112">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoCTPDockPosition" />
+        </value>
+        <remarks>
+          <span data-ttu-id="da877-113">
+            <para>Valeur par défaut est <see cref="F:Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionRight" /> pour les langues de droite à gauche et <see cref="F:Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionLeft" /> pour les langues lues de gauche.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-113">
+              <para>Defaults to <see cref="F:Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionRight" /> for Right-to-Left languages and <see cref="F:Microsoft.Office.Core.MsoCTPDockPosition.msoCTPDockPositionLeft" /> for Left-toRight languages.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DockPositionRestrict">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoCTPDockPositionRestrict DockPositionRestrict { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoCTPDockPositionRestrict DockPositionRestrict" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.DockPositionRestrict" />
+      <MemberSignature Language="VB.NET" Value="Public Property DockPositionRestrict As MsoCTPDockPositionRestrict" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCTPDockPositionRestrict DockPositionRestrict { Microsoft::Office::Core::MsoCTPDockPositionRestrict get(); void set(Microsoft::Office::Core::MsoCTPDockPositionRestrict value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCTPDockPositionRestrict</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-114">Obtient ou définit une valeur énumérée qui spécifie une restriction sur l’orientation d’un <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-114">Gets or sets an enumerated value specifying a restriction on the orientation of a <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object.</span>
+          </span>
+          <span data-ttu-id="da877-115">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-115">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoCTPDockPositionRestrict" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-116">Obtient ou définit la hauteur de la <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet (en points).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-116">Gets or sets the height of the <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object (in points).</span>
+          </span>
+          <span data-ttu-id="da877-117">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-117">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-118">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-118">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Title" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-119">Obtient le titre d’un objet <b>CustomTaskPane</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-119">Gets the title of a <b>CustomTaskPane</b> object.</span>
+          </span>
+          <span data-ttu-id="da877-120">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-120">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-121">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-121">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="da877-122">
+            <para>Cette propriété est définie une fois lors de la création.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-122">
+              <para>This property is set once at creation.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-123">
+            <b>La valeur True</b> si le texte spécifié <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet est visible.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-123">
+              <b>True</b> if the specified <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object is visible.</span>
+          </span>
+          <span data-ttu-id="da877-124">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-124">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-125">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-125">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-126">Obtient ou définit la largeur du volet Office spécifié par le <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-126">Gets or sets the width of the task pane specified by the <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object.</span>
+          </span>
+          <span data-ttu-id="da877-127">Lecture/écriture.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-127">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-128">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-128">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="public object Window { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Window" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomTaskPane.Window" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Window As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Window { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="da877-129">Renvoie la fenêtre objet parent de le <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-129">Gets the  parent window object of the <see cref="T:Microsoft.Office.Core._CustomTaskPane" /> object.</span>
+          </span>
+          <span data-ttu-id="da877-130">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-130">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="da877-131">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-131">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="da877-132">
+            <para>La classe spécifique de cette propriété dépend de l’application hôte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="da877-132">
+              <para>The specific class for this property depends on the host application.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

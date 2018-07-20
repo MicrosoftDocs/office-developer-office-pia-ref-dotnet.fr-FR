@@ -1,0 +1,404 @@
+<Type Name="HTMLProject" FullName="Microsoft.Office.Core.HTMLProject">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ec7d666e324390126ac21b47a76f888f91244674" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658895" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface HTMLProject : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLProject implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.HTMLProject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface HTMLProject&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class HTMLProject : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0356-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="2f3fd-101">Représente une branche de projet de niveau supérieur, comme dans l’Explorateur de projets dans Microsoft Script Editor.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2f3fd-101">Represents a top-level project branch, as in the Project Explorer in the Microsoft Script Editor.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="2f3fd-102">
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.HTMLProject.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" /> méthode de la <see cref="T:Microsoft.Office.Core.HTMLProject" /> objet afin d’ouvrir un projet HTML dans Microsoft Script Editor. Le projet est ouvert dans l’affichage source ou texte pour le document Microsoft Word actif, un classeur Excel ou une présentation PowerPoint.</para> Utilisation de 
+      <para>les <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> propriété pour renvoyer la collection d’objets <b>HTMLProjectItem</b> dans le projet HTML. Utiliser le <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" /> méthode pour actualiser le document HTML dans l’application hôte. Utiliser le <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshProject(System.Boolean)" /> méthode pour actualiser le projet dans l’éditeur de Script. Utiliser le <see cref="P:Microsoft.Office.Core.HTMLProject.State" /> méthode afin de déterminer si le projet HTML doit être actualisé.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2f3fd-102">
+          <para>Use the <see cref="M:Microsoft.Office.Core.HTMLProject.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" /> method of the <see cref="T:Microsoft.Office.Core.HTMLProject" /> object to open an HTML project in the Microsoft Script Editor. The project is opened in source view or text view for the active Microsoft Word document, Excel workbook, or PowerPoint presentation.</para>
+          <para>Use the <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> property to return the collection of <b>HTMLProjectItem</b> objects in the HTML project. Use the <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" /> method to refresh the HTML document in the host application. Use the <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshProject(System.Boolean)" /> method to refresh the project in the Microsoft Script Editor. Use the <see cref="P:Microsoft.Office.Core.HTMLProject.State" /> method to determine whether the HTML project needs to be refreshed.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2f3fd-103">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2f3fd-104">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2f3fd-105">
+            <para>Si l’objet a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.HTMLProject.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-105">
+              <para>If the object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.HTMLProject.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HTMLProjectItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.HTMLProjectItems HTMLProjectItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.HTMLProjectItems HTMLProjectItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.HTMLProjectItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HTMLProjectItems As HTMLProjectItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::HTMLProjectItems ^ HTMLProjectItems { Microsoft::Office::Core::HTMLProjectItems ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.HTMLProjectItems</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2f3fd-106">Renvoie le <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> collection qui est incluse dans le projet HTML spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-106">Returns the <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> collection that is included in the specified HTML project.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]valuetype Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (Optional OpenKind As MsoHTMLProjectOpen = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OpenKind" Type="Microsoft.Office.Core.MsoHTMLProjectOpen" />
+      </Parameters>
+      <Docs>
+        <param name="OpenKind">
+          <span data-ttu-id="2f3fd-107">Facultatif <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-107">Optional <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />.</span>
+          </span>
+          <span data-ttu-id="2f3fd-108">Le mode dans lequel le projet spécifié ou l’élément de projet est ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-108">The view in which the specified project or project item is opened.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="2f3fd-109">Ouvre le projet HTML spécifié ou un élément de projet HTML dans Microsoft Script Editor dans un des affichages spécifiés par l’option <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-109">Opens the specified HTML project or HTML project item in the Microsoft Script Editor in one of the views specified by the optional <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" /> constants.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2f3fd-110">
+            <para>Si une des constantes n’est pas spécifiée, l’élément de projet est ouvert dans l’affichage par défaut.</para>
+            <para>L’affichage par défaut est déterminée par si Microsoft Script Editor est ouvert ou non lorsque la méthode <b>Open</b> est exécutée. Si l’éditeur de Script n’est pas ouvert, la méthode <b>Open</b> démarre Microsoft Script Editor en affichage source. Si l’éditeur de Script est déjà ouvert, la méthode <b>Open</b> active Microsoft Script Editor et affiche le script dans l’affichage actuel.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-110">
+              <para>If one of the constants is not specified, the project item is opened in the default view.</para>
+              <para>The default view is determined by whether or not the Microsoft Script Editor is open when the <b>Open</b> method is executed. If the Script Editor is not open, the <b>Open</b> method starts the Script Editor in source view. If the Script Editor is already open, the <b>Open</b> method activates the Script Editor and displays the script in the current view.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2f3fd-111">Renvoie l’objet <b>Parent</b> de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-111">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshDocument">
+      <MemberSignature Language="C#" Value="public void RefreshDocument (bool Refresh = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshDocument([in]bool Refresh) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshDocument (Optional Refresh As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Refresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Refresh">
+          <span data-ttu-id="2f3fd-112">
+            <b>Boolean</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-112">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="2f3fd-113">
+            <b>True</b> si toutes les modifications doivent être enregistrées. <b>False</b> si toutes les modifications doivent être ignorées.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-113">
+              <b>True</b> if all changes are to be saved; <b>False</b> if all changes are to be ignored.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="2f3fd-114">Actualise le projet HTML spécifié dans l’application hôte Microsoft Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-114">Refreshes the specified HTML project in the Microsoft Office host application.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2f3fd-115">
+            <para>Cette méthode équivaut à cliquer sur le bouton Actualiser de la barre d’outils Actualiser dans l’application hôte Office. Si vous actualisez le document en affectant à la méthode <b>RefreshDocument</b> la <b>valeur True</b>, toutes les modifications apportées à la source HTML effectuées dans Microsoft Script Editor sont enregistrées dans l’application hôte Office. Si vous affectez la valeur <b>False</b><b>RefreshDocument</b> , toutes les modifications apportées à la source HTML sont ignorées.</para>
+            <para>Notez que la valeur renvoyée par la <see cref="P:Microsoft.Office.Core.HTMLProject.State" /> propriété est affectée par la méthode <b>RefreshDocument</b> . Si vous appelez RefreshDocument(True), la propriété <b>State</b> renvoie <b>msoHTMLProjectStateDocumentProjectUnlocked</b> si elle est appelée après l’opération d’actualisation.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-115">
+              <para>Using this method is equivalent to clicking the Refresh button on the Refresh toolbar in the Office host application. If you refresh the document by setting the <b>RefreshDocument</b> method to <b>True</b>, all changes to the HTML source made in the Microsoft Script Editor are saved in the Office host application. If you set <b>RefreshDocument</b> to <b>False</b>, all changes to the HTML source are ignored.</para>
+              <para>Note that the value returned by the <see cref="P:Microsoft.Office.Core.HTMLProject.State" /> property is affected by the <b>RefreshDocument</b> method. If you call RefreshDocument(True), the <b>State</b> property returns <b>msoHTMLProjectStateDocumentProjectUnlocked</b> if it is called after the refresh operation.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshProject">
+      <MemberSignature Language="C#" Value="public void RefreshProject (bool Refresh = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshProject([in]bool Refresh) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProject.RefreshProject(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshProject (Optional Refresh As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Refresh" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Refresh">
+          <span data-ttu-id="2f3fd-116">
+            <b>Boolean</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-116">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="2f3fd-117">
+            <b>La valeur true</b> si le document est actualisé ; <b>False</b> si le document n’est pas actualisé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-117">
+              <b>True</b> if the document will be refreshed; <b>False</b> if the document will not be refreshed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="2f3fd-118">Actualise le projet HTML spécifié dans Microsoft Script Editor.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-118">Refreshes the specified HTML project in the Microsoft Script Editor.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="2f3fd-119">
+            <para>Cette méthode équivaut à cliquer sur le bouton Actualiser de la barre d’outils Actualiser dans Microsoft Script Editor. Si vous actualisez le document en définissant <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" /> sur <b>True</b>, toutes les modifications apportées à la source HTML dans l’application hôte Office sont enregistrées dans le projet HTML dans Microsoft Script Editor. Si vous affectez la valeur <b>False</b><b>RefreshDocument</b> , toutes les modifications apportées à la source HTML sont ignorées.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-119">
+              <para>Using this method is equivalent to clicking the Refresh button on the Refresh toolbar in the Microsoft Script Editor. If you refresh the document by setting <see cref="M:Microsoft.Office.Core.HTMLProject.RefreshDocument(System.Boolean)" /> to <b>True</b>, all changes to the HTML source made in the Office host application are saved to the HTML project in the Microsoft Script Editor. If you set <b>RefreshDocument</b> to <b>False</b>, all changes to the HTML source are ignored.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoHTMLProjectState this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoHTMLProjectState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProject.State" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property State As MsoHTMLProjectState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHTMLProjectState default { Microsoft::Office::Core::MsoHTMLProjectState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoHTMLProjectState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2f3fd-120">Renvoie l’état actuel d’un <see cref="T:Microsoft.Office.Core.HTMLProject" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2f3fd-120">Returns the current state of an <see cref="T:Microsoft.Office.Core.HTMLProject" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

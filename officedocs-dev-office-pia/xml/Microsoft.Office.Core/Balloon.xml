@@ -1,0 +1,1360 @@
+<Type Name="Balloon" FullName="Microsoft.Office.Core.Balloon">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b978291d98fbee8f572e76ae54e7063dd52fe070" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659063" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Balloon : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Balloon implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Balloon" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Balloon&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Balloon : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0324-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="6d191-101">Représente la bulle dans laquelle le Compagnon Office affiche des informations.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6d191-101">Represents the balloon where the Office Assistant displays information.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="6d191-102">
+        <para>Une info-bulle peut contenir des contrôles tels que les cases à cocher et étiquettes.</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Core.Assistant.NewBalloon" /> propriété permet de renvoyer un objet <b>Balloon</b> . Il n’est pas une collection pour l’objet <b>Balloon</b> ; une seule bulle peut être visible à la fois. Toutefois, il est possible de définir plusieurs bulles et afficher n’importe lequel d'entre eux lorsque nécessaire.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.Balloon.Show" /> méthode pour afficher l’info-bulle spécifiée. Utiliser le <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> propriété pour exécuter des procédures basées sur des sélections de bulles non modales (bulles qui restent visibles lorsqu’un utilisateur travaille dans l’application). Utiliser le <see cref="M:Microsoft.Office.Core.Balloon.Close" /> méthode pour fermer les bulles non modales.</para>
+        <para>Vous pouvez réutiliser des objets balloon que vous avez déjà créé en affectant l’objet à une variable et en affichant la variable lorsque vous devez it.</para>
+        <para>Également, au lieu d’utiliser des variables séparées, vous pouvez placer l’objet balloon dans un tableau.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6d191-102">
+          <para>A balloon can contain controls such as check boxes and labels.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.Assistant.NewBalloon" /> property to return a <b>Balloon</b> object. There isn't a collection for the <b>Balloon</b> object; only one balloon can be visible at a time. However, it's possible to define several balloons and display any one of them when needed.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.Balloon.Show" /> method to make the specified balloon visible. Use the <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> property to run procedures based on selections from modeless balloons (balloons that remain visible while a user works in the application). Use the <see cref="M:Microsoft.Office.Core.Balloon.Close" /> method to close modeless balloons.</para>
+          <para>You can reuse balloon objects you've already created by assigning the object to a variable and displaying the variable when you need it.</para>
+          <para>Alternatively, instead of using separate variables, you can place the balloon object into an array.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Animation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoAnimationType Animation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoAnimationType Animation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Animation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Animation As MsoAnimationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAnimationType Animation { Microsoft::Office::Core::MsoAnimationType get(); void set(Microsoft::Office::Core::MsoAnimationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoAnimationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-103">Cette propriété renvoie ou définit une action d’animation pour le Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-103">Returns or sets an animation action for the Office Assistant.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-104">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Le Compagnon est animé uniquement pendant l’info-bulle. « Trombine » est le Compagnon par défaut et <b>msoAnimationIdle</b> est le type d’animation par défaut pour l’Assistant.</para>
+            <para>Selon le Compagnon sélectionné, définir la propriété <b>Animation</b> peut ou non aboutir à une animation évidente. Toutefois, tous les <see cref="T:Microsoft.Office.Core.MsoAnimationType" /> constantes sont valides pour tous les Assistants. Notez que les différentes constantes peuvent produire la même animation.</para>
+            <para>L’une des constantes <b>MsoAnimationType</b> suivantes représentent des animations qui répètent l’action spécifiée jusqu'à ce que l’Assistant est rejeté ou jusqu'à ce que la propriété <b>Animation</b> est réinitialisée avec une autre animation :</para>
+            <para>
+              <b>msoAnimationCheckingSomething</b>
+            </para>
+            <para>
+              <b>msoAnimationGetTechy</b>
+            </para>
+            <para>
+              <b>msoAnimationListensToComputer</b>
+            </para>
+            <para>
+              <b>msoAnimationSearching</b>
+            </para>
+            <para>
+              <b>msoAnimationThinking</b>
+            </para>
+            <para>
+              <b>msoAnimationWorkingAtSomething</b>
+            </para>
+            <para>
+              <b>msoAnimationWritingNotingSomething</b>
+            </para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-104">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>The Assistant is animated only while the balloon is displayed. “Clippit” is the default Assistant, and <b>msoAnimationIdle</b> is the default animation type for the Assistant.</para>
+              <para>Depending on the selected Assistant, setting the <b>Animation</b> property may or may not result in an obvious animation. However, all <see cref="T:Microsoft.Office.Core.MsoAnimationType" /> constants are valid for all Assistants. Note that different constants may produce the same animation.</para>
+              <para>The following <b>MsoAnimationType</b> constants represent animations that repeat the specified action until the Assistant is dismissed or until the <b>Animation</b> property is reset with another animation:</para>
+              <para>
+                <b>msoAnimationCheckingSomething </b>
+              </para>
+              <para>
+                <b>msoAnimationGetTechy</b>
+              </para>
+              <para>
+                <b>msoAnimationListensToComputer</b>
+              </para>
+              <para>
+                <b>msoAnimationSearching</b>
+              </para>
+              <para>
+                <b>msoAnimationThinking </b>
+              </para>
+              <para>
+                <b>msoAnimationWorkingAtSomething</b>
+              </para>
+              <para>
+                <b>msoAnimationWritingNotingSomething</b>
+              </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-105">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-105">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BalloonType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBalloonType BalloonType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBalloonType BalloonType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.BalloonType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BalloonType As MsoBalloonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBalloonType BalloonType { Microsoft::Office::Core::MsoBalloonType get(); void set(Microsoft::Office::Core::MsoBalloonType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBalloonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-106">Cette propriété renvoie ou définit le type de l’info-bulle utilisé par le Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-106">Returns or sets the type of balloon the Office Assistant uses.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-107">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Lorsque vous créez un <see cref="T:Microsoft.Office.Core.Balloon" /> d’objet, cette propriété est définie à l’origine <b>msoBalloonTypeButtons</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-107">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>When you create a <see cref="T:Microsoft.Office.Core.Balloon" /> object, this property is initially set to <b>msoBalloonTypeButtons</b>. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoButtonSetType Button { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoButtonSetType Button" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Button" />
+      <MemberSignature Language="VB.NET" Value="Public Property Button As MsoButtonSetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoButtonSetType Button { Microsoft::Office::Core::MsoButtonSetType get(); void set(Microsoft::Office::Core::MsoButtonSetType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoButtonSetType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-108">Cette propriété renvoie ou définit le type de bouton affiché en bas de la bulle Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-108">Returns or sets the type of button displayed at the bottom of the Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-109">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Lorsque vous créez un <see cref="T:Microsoft.Office.Core.Balloon" /> d’objet, cette propriété est initialement définie sur <b>msoButtonSetOK</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-109">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>When you create a <see cref="T:Microsoft.Office.Core.Balloon" /> object, this property is initially set to <b>msoButtonSetOK</b>. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Callback">
+      <MemberSignature Language="C#" Value="public string Callback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Callback" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Callback" />
+      <MemberSignature Language="VB.NET" Value="Public Property Callback As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Callback { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-110">Cette propriété renvoie ou définit le nom de la procédure à exécuter à partir d’une info-bulle non modale.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-110">Returns or sets the name of the procedure to run from a modeless balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-111">
+            <para>La procédure que vous spécifiez pour la propriété <b>Callback</b> doit être écrite pour recevoir deux ou trois arguments, selon ce que vous utilisez la propriété. Si vous utilisez la propriété <b>Callback</b> avec un Assistant, vous devez écrire la procédure pour recevoir les deux arguments : un entier long qui représente le <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> valeur du bouton sur lequel l’utilisateur a cliqué et un entier long qui identifie de manière unique l’info-bulle. Si vous utilisez la propriété <b>Callback</b> avec une info-bulle non modale, vous devez écrire la procédure pour recevoir trois arguments : l’objet Balloon qui a appelé la procédure ; un entier long qui représente la valeur <b>msoBalloonButtonType</b> du bouton l’utilisateur a cliqué ; et un entier long qui identifie de manière unique l’info-bulle qui a appelé la procédure, comme indiqué dans l’info-bulle <see cref="P:Microsoft.Office.Core.Balloon.Private" /> propriété.</para>
+            <para>La procédure de rappel doit contenir au moins une condition sous lequel le <see cref="M:Microsoft.Office.Core.Balloon.Close" /> méthode est appliquée à la <see cref="T:Microsoft.Office.Core.Balloon" /> objet qui est passé ; sinon, l’info-bulle non modale ne peut pas être fermée.</para>
+            <para>Si vous spécifiez une procédure qui est stockée dans un module de classe distinct, vous devez inclure le nom du module dans la valeur attribuée à la propriété <b>Callback</b> (par exemple, « Feuil1.MonCallback).</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-111">
+              <para>The procedure you specify for the <b>Callback</b> property must be written to receive either two or three arguments, depending on what you use the property with. If you use the <b>Callback</b> property with a wizard, you must write the procedure to receive two arguments: a long integer that represents the <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> value of the button that the user clicked, and a long integer that uniquely identifies the balloon. If you use the <b>Callback</b> property with a modeless balloon, you must write the procedure to receive three arguments: the Balloon object that called the procedure; a long integer that represents the <b>msoBalloonButtonType</b> value of the button the user clicked; and a long integer that uniquely identifies the balloon that called the procedure, as denoted in the balloon’s <see cref="P:Microsoft.Office.Core.Balloon.Private" /> property.</para>
+              <para>The callback procedure must contain at least one condition under which the <see cref="M:Microsoft.Office.Core.Balloon.Close" /> method is applied to the <see cref="T:Microsoft.Office.Core.Balloon" /> object that is passed to it; otherwise, the modeless balloon cannot be dismissed.</para>
+              <para>If you specify a procedure that is stored in a separate class module, you must include the module name in the value assigned to the <b>Callback</b> property (for example, "Sheet1.MyCallback).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checkboxes">
+      <MemberSignature Language="C#" Value="public object Checkboxes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Checkboxes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Checkboxes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Checkboxes As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Checkboxes { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-112">Renvoie le <see cref="T:Microsoft.Office.Core.BalloonCheckboxes" /> collection qui représente toutes les cases à cocher contenues dans l’info-bulle spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-112">Returns the <see cref="T:Microsoft.Office.Core.BalloonCheckboxes" /> collection that represents all the check boxes contained in the specified balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809368)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-113">Ferme la bulle non modale active.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-113">Closes the active modeless balloon.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="6d191-114">
+            <para>Vous devez utiliser cette méthode uniquement dans les procédures de rappel.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-114">
+              <para>You should use this method only in callback procedures.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-115">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-115">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-116">
+            <para>Par exemple du fonctionne de cette propriété, elle renvoie 1297307460, ce qui représente la chaîne « MSWD », si l’objet a été créé dans Microsoft Word. Cette propriété renvoie 1480803660 si l’objet a été créé dans Microsoft Excel. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur « MSWD ». Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.Balloon.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-116">
+              <para>As an example of how this property works, it returns 1297307460, which represents the string "MSWD", if the object was created in Microsoft Word; this property returns 1480803660 if the object was created in Microsoft Excel. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code "MSWD". For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.Balloon.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Heading">
+      <MemberSignature Language="C#" Value="public string Heading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Heading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Heading" />
+      <MemberSignature Language="VB.NET" Value="Public Property Heading As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Heading { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-117">Cette propriété renvoie ou définit le titre qui s’affiche dans le Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-117">Returns or sets the heading that appears in the Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-118">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>, Vous pouvez spécifier un graphisme à afficher dans le titre de la bulle à l’aide de la syntaxe suivante : {<paramref name="type location sizing_factor" />}, où <paramref name="type" /> est bmp (bitmap) ou wmf (Windows metafile), <paramref name="location" /> est la ressource ID ou le chemin d’accès et nom de fichier et <paramref name="sizing_factor" /> spécifie la largeur de la WMF (omis pour bmp).</para>
+            <para>Le titre de la bulle prend également en charge texte souligné et le texte qui possède l’une des 16 palette couleurs système appliqués. Pour afficher le texte souligné dans un titre, utilisez la syntaxe {<paramref name="ul" />} ou {<paramref name="ul 1" />} ; Utilisez {<paramref name="ul 0" />} pour désactiver le soulignement. Pour modifier la couleur du texte du titre, faites précéder la chaîne de texte avec la séquence de caractères {<paramref name="cf number" />}, où nombre est un des numéros de couleurs système répertoriés dans le tableau suivant.</para>
+            <item>
+              <description>
+                <b>3</b>
+              </description>
+              <description>jaune foncé</description>
+            </item>
+            <list type="table">
+              <item>
+                <description>
+                  <b>0</b>
+                </description>
+                <description>noir</description>
+              </item>
+              <item>
+                <description>
+                  <b>1</b>
+                </description>
+                <description>rouge foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>2</b>
+                </description>
+                <description>vert foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>4</b>
+                </description>
+                <description>bleu foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>5 </b>
+                </description>
+                <description>Magenta foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>6</b>
+                </description>
+                <description>cyan foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>7</b>
+                </description>
+                <description>gris clair</description>
+              </item>
+              <item>
+                <description>
+                  <b>248</b>
+                </description>
+                <description>gris</description>
+              </item>
+              <item>
+                <description>
+                  <b>249</b>
+                </description>
+                <description>rouge</description>
+              </item>
+              <item>
+                <description>
+                  <b>250</b>
+                </description>
+                <description>Vert</description>
+              </item>
+              <item>
+                <description>
+                  <b>251</b>
+                </description>
+                <description>jaune</description>
+              </item>
+              <item>
+                <description>Bleu</description>
+                <description>
+                  <b>252</b>
+                </description>
+              </item>
+              <item>
+                <description>
+                  <b>253</b>
+                </description>
+                <description>magenta</description>
+              </item>
+              <item>
+                <description>
+                  <b>254</b>
+                </description>
+                <description>cyan</description>
+              </item>
+              <item>
+                <description>
+                  <b>255</b>
+                </description>
+                <description>livre</description>
+              </item>
+            </list>
+            <para>Si vous spécifiez un numéro autre qu’un des numéros de couleurs système ci-dessus, le texte du titre est noir.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-118">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>You can specify a graphic to be displayed in the balloon heading by using the following syntax: {<paramref name="type location sizing_factor" />}, where <paramref name="type" /> is bmp (bitmap) or wmf (Windows metafile), <paramref name="location" /> is the resource ID or the path and file name, and <paramref name="sizing_factor" /> specifies the width of the wmf (omitted for bmp).</para>
+              <para>The balloon heading also supports underlined text and text that has one of the 16 system palette colors applied to it. To display underlined text in a heading, use the syntax {<paramref name="ul" />} or {<paramref name="ul 1" />}; use {<paramref name="ul 0" />} to turn underlining off. To change the color of heading text, precede the text string with the character sequence {<paramref name="cf number" />}, where number is one of the system color numbers listed in the following table.</para>
+              <list type="table">
+                <item>
+                  <description>
+                    <b>0</b>
+                  </description>
+                  <description>Black</description>
+                </item>
+                <item>
+                  <description>
+                    <b>1</b>
+                  </description>
+                  <description>Dark red</description>
+                </item>
+                <item>
+                  <description>
+                    <b>2</b>
+                  </description>
+                  <description>Dark green</description>
+                </item>
+                <item>
+                  <description>
+                    <b>3</b>
+                  </description>
+                  <description>Dark yellow</description>
+                </item>
+                <item>
+                  <description>
+                    <b>4</b>
+                  </description>
+                  <description>Dark blue</description>
+                </item>
+                <item>
+                  <description>
+                    <b>5</b>
+                  </description>
+                  <description>Dark magenta</description>
+                </item>
+                <item>
+                  <description>
+                    <b>6</b>
+                  </description>
+                  <description>Dark cyan</description>
+                </item>
+                <item>
+                  <description>
+                    <b>7</b>
+                  </description>
+                  <description>Light gray</description>
+                </item>
+                <item>
+                  <description>
+                    <b>248</b>
+                  </description>
+                  <description>Medium gray</description>
+                </item>
+                <item>
+                  <description>
+                    <b>249</b>
+                  </description>
+                  <description>Red</description>
+                </item>
+                <item>
+                  <description>
+                    <b>250</b>
+                  </description>
+                  <description>Green</description>
+                </item>
+                <item>
+                  <description>
+                    <b>251</b>
+                  </description>
+                  <description>Yellow</description>
+                </item>
+                <item>
+                  <description>
+                    <b>252</b>
+                  </description>
+                  <description>Blue</description>
+                </item>
+                <item>
+                  <description>
+                    <b>253</b>
+                  </description>
+                  <description>Magenta</description>
+                </item>
+                <item>
+                  <description>
+                    <b>254</b>
+                  </description>
+                  <description>Cyan</description>
+                </item>
+                <item>
+                  <description>
+                    <b>255</b>
+                  </description>
+                  <description>White</description>
+                </item>
+              </list>
+              <para>If you specify a number other than one of the preceding system color numbers, the heading text is black.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoIconType Icon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoIconType Icon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As MsoIconType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoIconType Icon { Microsoft::Office::Core::MsoIconType get(); void set(Microsoft::Office::Core::MsoIconType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoIconType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-119">Cette propriété renvoie ou définit le type d’icône qui apparaît dans la partie supérieure gauche de la bulle Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-119">Returns or sets the type of icon that appears in the upper-left portion of the Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-120">
+            <para>Partie du contenu dans cette rubrique ne soient pas applicables à certaines langues.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-120">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Labels">
+      <MemberSignature Language="C#" Value="public object Labels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Labels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Labels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Labels As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Labels { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-121">Renvoie un <see cref="T:Microsoft.Office.Core.BalloonLabels" /> collection qui représente les étiquettes des boutons, étiquettes de numéro et des étiquettes de puces contenues dans l’info-bulle du Compagnon Office spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-121">Returns a <see cref="T:Microsoft.Office.Core.BalloonLabels" /> collection that represents the button labels, number labels, and bullet labels contained in the specified Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-122">
+            <para>Partie du contenu dans cette rubrique ne soient pas applicables à certaines langues.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-122">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoModeType Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoModeType Mode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As MsoModeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoModeType Mode { Microsoft::Office::Core::MsoModeType get(); void set(Microsoft::Office::Core::MsoModeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoModeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-123">Cette propriété renvoie ou définit le comportement modal du Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-123">Returns or sets the modal behavior of the Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-124">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Lorsque vous créez un <see cref="T:Microsoft.Office.Core.Balloon" /> d’objet, cette propriété est définie à l’origine <b>msoModeModal</b>.</para>
+            <para>Si la valeur de la propriété <b>Mode</b> d’une info-bulle <b>msoModeModeless</b>, l’utilisateur peut travailler dans l’application, alors que l’info-bulle est visible. Si la propriété est définie à <b>msoModeModal</b>, l’utilisateur doit faire disparaître l’info-bulle avant de continuer à travailler dans l’application. Si la propriété est définie à <b>msoModeAutoDown</b>, l’info-bulle est fermée lorsque l’utilisateur clique n’importe où sur l’écran.</para>
+            <para>Si la propriété <b>Mode</b> d’une info-bulle est définie à <b>msoModeModeless</b> et une valeur pour le <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> propriété n’est pas fournie, une erreur se produit. Le <see cref="M:Microsoft.Office.Core.Balloon.Close" /> méthode peut uniquement être utilisée dans la procédure spécifiée par la propriété <b>rappel</b> lorsque la valeur de la propriété <b>Mode</b><b>msoModeModeless</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-124">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>When you create a <see cref="T:Microsoft.Office.Core.Balloon" /> object, this property is initially set to <b>msoModeModal</b>. </para>
+              <para>If the <b>Mode</b> property for a balloon is set to <b>msoModeModeless</b>, the user can work in the application while the balloon is visible. If the property is set to <b>msoModeModal</b>, the user must dismiss the balloon before continuing to work in the application. If the property is set to <b>msoModeAutoDown</b>, the balloon is dismissed when the user clicks anywhere on the screen.</para>
+              <para>If the <b>Mode</b> property for a balloon is set to <b>msoModeModeless</b> and a value for the <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> property is not supplied, an error occurs. The <see cref="M:Microsoft.Office.Core.Balloon.Close" /> method can only be used in the procedure specified by the <b>Callback</b> property when the <b>Mode</b> property is set to <b>msoModeModeless</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-125">Renvoie ou définit le nom de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-125">Returns or sets the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-126">Renvoie l'objet parent de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-126">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Private">
+      <MemberSignature Language="C#" Value="public int Private { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Private" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Private" />
+      <MemberSignature Language="VB.NET" Value="Public Property Private As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Private { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-127">Cette propriété renvoie ou définit un entier qui identifie le Compagnon Office qui a initié la procédure de rappel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-127">Returns or sets an integer that identifies the Office Assistant balloon that initiated the callback procedure.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-128">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Cette propriété est utile si vous exécutez la même procédure de rappel à partir de plusieurs info-bulles.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-128">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>This property is helpful if you run the same callback procedure from more than one balloon.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAvoidRectangle">
+      <MemberSignature Language="C#" Value="public void SetAvoidRectangle (int Left, int Top, int Right, int Bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAvoidRectangle([in]int32 Left, [in]int32 Top, [in]int32 Right, [in]int32 Bottom) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.SetAvoidRectangle(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAvoidRectangle (Left As Integer, Top As Integer, Right As Integer, Bottom As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAvoidRectangle(int Left, int Top, int Right, int Bottom);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Int32" />
+        <Parameter Name="Top" Type="System.Int32" />
+        <Parameter Name="Right" Type="System.Int32" />
+        <Parameter Name="Bottom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <span data-ttu-id="6d191-129">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-129">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="6d191-130">Coordonnées (en points, par rapport à l’écran) de la zone de l’écran qui vous permettront d’éviter le Compagnon Office lorsqu’il est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-130">The coordinates (in points and relative to the screen) of the area of the screen that the Office Assistant balloon will avoid when it's displayed.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="6d191-131">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-131">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="6d191-132">Coordonnées (en points, par rapport à l’écran) de la zone de l’écran qui vous permettront d’éviter le Compagnon Office lorsqu’il est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-132">The coordinates (in points and relative to the screen) of the area of the screen that the Office Assistant balloon will avoid when it's displayed.</span>
+          </span>
+        </param>
+        <param name="Right">
+          <span data-ttu-id="6d191-133">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-133">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="6d191-134">Coordonnées (en points, par rapport à l’écran) de la zone de l’écran qui vous permettront d’éviter le Compagnon Office lorsqu’il est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-134">The coordinates (in points and relative to the screen) of the area of the screen that the Office Assistant balloon will avoid when it's displayed.</span>
+          </span>
+        </param>
+        <param name="Bottom">
+          <span data-ttu-id="6d191-135">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-135">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="6d191-136">Coordonnées (en points, par rapport à l’écran) de la zone de l’écran qui vous permettront d’éviter le Compagnon Office lorsqu’il est affiché.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-136">The coordinates (in points and relative to the screen) of the area of the screen that the Office Assistant balloon will avoid when it's displayed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6d191-137">Empêche le Compagnon Office s’affiche dans une zone spécifiée de l’écran.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-137">Prevents the Office Assistant balloon from being displayed in a specified area of the screen.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="6d191-138">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Cette propriété renvoie une <see cref="T:Microsoft.Office.Core.Assistant" /> objet.</para>
+            <para>Cette propriété est conçue pour empêcher le Compagnon Office à partir des Assistants et boîtes de dialogue personnalisées qui se chevauchent.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-138">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>This property returns a <see cref="T:Microsoft.Office.Core.Assistant" /> object.</para>
+              <para>This property is intended to prevent the Office Assistant balloon from overlapping custom dialog boxes and wizards.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBalloonButtonType Show ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Core.MsoBalloonButtonType Show() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.Show" />
+      <MemberSignature Language="VB.NET" Value="Public Function Show () As MsoBalloonButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::MsoBalloonButtonType Show();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBalloonButtonType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-139">Affiche l’objet bulle spécifié et renvoie un <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-139">Displays the specified balloon object and returns a <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> constant.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="6d191-140">
+            <para>La constante renvoyée indique quel bouton ou une étiquette de l’utilisateur a cliqué dans la bulle.</para>
+            <para>Cette propriété renvoie une expression qui renvoie un <see cref="T:Microsoft.Office.Core.Balloon" /> objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-140">
+              <para>The returned constant indicates which button or label the user clicked in the balloon.</para>
+              <para>This property returns an expression that returns a <see cref="T:Microsoft.Office.Core.Balloon" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6d191-141">Cette propriété renvoie ou définit le texte affiché après le titre mais avant les étiquettes ou les cases à cocher dans la bulle Compagnon Office.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-141">Returns or sets the text displayed after the heading but before the labels or check boxes in the Office Assistant balloon.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6d191-142">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>, Vous pouvez spécifier qu’un graphisme particulier affichée en utilisant la syntaxe suivante : {<paramref name="type location sizing_factor" />}, où <paramref name="type" /> est bmp (bitmap) ou wmf (Windows metafile) ; <paramref name="location" /> est la ressource de nom de l’ID ou le chemin d’accès et le fichier ; et <paramref name="sizing_factor" /> désigne la largeur du fichier .wmf (<paramref name="sizing_factor" /> est omis pour les fichiers .bmp).</para>
+            <para>La <see cref="T:Microsoft.Office.Core.Balloon" /> objet prend également en charge texte souligné et le texte qui possède l’une des 16 palette couleurs système appliqués. Pour afficher le texte souligné, utilisez la syntaxe {<paramref name="ul" />} ou {<paramref name="ul 1" />} ; Utilisez {<paramref name="ul 0" />} pour désactiver le soulignement. Pour modifier la couleur du texte, faites précéder la chaîne de texte avec la séquence de caractères {<paramref name="cf number" />}, où nombre est un des numéros de couleurs système répertoriés dans le tableau suivant.</para>
+            <item>
+              <description>
+                <b>3</b>
+              </description>
+              <description>jaune foncé</description>
+            </item>
+            <list type="table">
+              <item>
+                <description>
+                  <b>0</b>
+                </description>
+                <description>noir</description>
+              </item>
+              <item>
+                <description>
+                  <b>1</b>
+                </description>
+                <description>rouge foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>2</b>
+                </description>
+                <description>vert foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>4</b>
+                </description>
+                <description>bleu foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>5 </b>
+                </description>
+                <description>Magenta foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>6</b>
+                </description>
+                <description>cyan foncé</description>
+              </item>
+              <item>
+                <description>
+                  <b>7</b>
+                </description>
+                <description>gris clair</description>
+              </item>
+              <item>
+                <description>
+                  <b>248</b>
+                </description>
+                <description>gris</description>
+              </item>
+              <item>
+                <description>
+                  <b>249</b>
+                </description>
+                <description>rouge</description>
+              </item>
+              <item>
+                <description>
+                  <b>250</b>
+                </description>
+                <description>Vert</description>
+              </item>
+              <item>
+                <description>
+                  <b>251</b>
+                </description>
+                <description>jaune</description>
+              </item>
+              <item>
+                <description>Bleu</description>
+                <description>
+                  <b>252</b>
+                </description>
+              </item>
+              <item>
+                <description>
+                  <b>253</b>
+                </description>
+                <description>magenta</description>
+              </item>
+              <item>
+                <description>
+                  <b>254</b>
+                </description>
+                <description>cyan</description>
+              </item>
+              <item>
+                <description>
+                  <b>255</b>
+                </description>
+                <description>livre</description>
+              </item>
+            </list>
+            <para>Si vous spécifiez un numéro autre qu’un des numéros de couleurs système ci-dessus, le texte dans le Compagnon Office est noir.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6d191-142">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>You can specify that a particular graphic be displayed by using the following syntax: {<paramref name="type location sizing_factor" />}, where <paramref name="type" /> is bmp (bitmap) or wmf (Windows metafile); <paramref name="location" /> is the resource ID or the path and file name; and <paramref name="sizing_factor" /> denotes the width of the .wmf file (<paramref name="sizing_factor" /> is omitted for .bmp files).</para>
+              <para>The <see cref="T:Microsoft.Office.Core.Balloon" /> object also supports underlined text and text that has one of the 16 system palette colors applied to it. To display underlined text, use the syntax {<paramref name="ul" />} or {<paramref name="ul 1" />}; use {<paramref name="ul 0" />} to turn underlining off. To change the color of text, precede the text string with the character sequence {<paramref name="cf number" />}, where number is one of the system color numbers listed in the following table.</para>
+              <list type="table">
+                <item>
+                  <description>
+                    <b>0</b>
+                  </description>
+                  <description>Black</description>
+                </item>
+                <item>
+                  <description>
+                    <b>1</b>
+                  </description>
+                  <description>Dark red</description>
+                </item>
+                <item>
+                  <description>
+                    <b>2</b>
+                  </description>
+                  <description>Dark green</description>
+                </item>
+                <item>
+                  <description>
+                    <b>3</b>
+                  </description>
+                  <description>Dark yellow</description>
+                </item>
+                <item>
+                  <description>
+                    <b>4</b>
+                  </description>
+                  <description>Dark blue</description>
+                </item>
+                <item>
+                  <description>
+                    <b>5</b>
+                  </description>
+                  <description>Dark magenta</description>
+                </item>
+                <item>
+                  <description>
+                    <b>6</b>
+                  </description>
+                  <description>Dark cyan</description>
+                </item>
+                <item>
+                  <description>
+                    <b>7</b>
+                  </description>
+                  <description>Light gray</description>
+                </item>
+                <item>
+                  <description>
+                    <b>248</b>
+                  </description>
+                  <description>Medium gray</description>
+                </item>
+                <item>
+                  <description>
+                    <b>249</b>
+                  </description>
+                  <description>Red</description>
+                </item>
+                <item>
+                  <description>
+                    <b>250</b>
+                  </description>
+                  <description>Green</description>
+                </item>
+                <item>
+                  <description>
+                    <b>251</b>
+                  </description>
+                  <description>Yellow</description>
+                </item>
+                <item>
+                  <description>
+                    <b>252</b>
+                  </description>
+                  <description>Blue</description>
+                </item>
+                <item>
+                  <description>
+                    <b>253</b>
+                  </description>
+                  <description>Magenta</description>
+                </item>
+                <item>
+                  <description>
+                    <b>254</b>
+                  </description>
+                  <description>Cyan</description>
+                </item>
+                <item>
+                  <description>
+                    <b>255</b>
+                  </description>
+                  <description>White</description>
+                </item>
+              </list>
+              <para>If you specify a number other than one of the preceding system color numbers, the text in the Office Assistant balloon is black.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
