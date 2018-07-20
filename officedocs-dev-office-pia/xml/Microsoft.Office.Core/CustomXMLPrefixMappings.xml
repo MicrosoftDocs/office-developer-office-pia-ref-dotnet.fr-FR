@@ -1,0 +1,490 @@
+<Type Name="CustomXMLPrefixMappings" FullName="Microsoft.Office.Core.CustomXMLPrefixMappings">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="190d48b94af1299572cda2a3fe8441b5a64cbbaf" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658631" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CustomXMLPrefixMappings : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomXMLPrefixMappings implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.CustomXMLPrefixMappings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CustomXMLPrefixMappings&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CustomXMLPrefixMappings : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CDB00-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="368ef-101">Représente une collection de <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> objets.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="368ef-101">Represents a collection of <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> objects.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddNamespace">
+      <MemberSignature Language="C#" Value="public void AddNamespace (string Prefix, string NamespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddNamespace([in]string Prefix, [in]string NamespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLPrefixMappings.AddNamespace(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNamespace (Prefix As String, NamespaceURI As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNamespace(System::String ^ Prefix, System::String ^ NamespaceURI);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prefix" Type="System.String" />
+        <Parameter Name="NamespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Prefix">
+          <span data-ttu-id="368ef-102">Contient le préfixe à ajouter à la liste de mappage des préfixes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-102">Contains the prefix to add to the prefix mapping list.</span>
+          </span>
+        </param>
+        <param name="NamespaceURI">
+          <span data-ttu-id="368ef-103">Contient l'espace de noms à affecter au préfixe qui vient d'être ajouté.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-103">Contains the namespace to assign to the newly added prefix.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="368ef-104">Cette méthode vous permet d'ajouter un mappage personnalisé espace de noms/préfixe à utiliser lors de l'interrogation d'un élément.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-104">Allows you to add a custom namespace/prefix mapping to use when querying an item.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="368ef-105">
+            <para>Si le préfixe existe déjà dans le Gestionnaire de Namespace, cette méthode remplace la signification du préfixe, sauf lorsque le préfixe est ajouté ou utilisé par le magasin de données (interface<b>IXMLDataStore</b> ) en interne, dans ce cas, il renverra une erreur.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-105">
+              <para>If the prefix already exists in the Namespace Manager, this method will overwrite the meaning of that prefix except when the prefix is one added or used by the data store (<b>IXMLDataStore</b> interface) internally, in which case it will return an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLPrefixMappings.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="368ef-106">Obtient un objet <b>Application</b> qui représente l’application conteneur pour le <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-106">Gets an <b>Application</b> object that represents the container application for the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> object.</span>
+          </span>
+          <span data-ttu-id="368ef-107">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-107">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="368ef-108">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-108">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLPrefixMappings.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="368ef-109">Obtient le nombre d’éléments dans les <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-109">Gets the number of items in the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> collection.</span>
+          </span>
+          <span data-ttu-id="368ef-110">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-110">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="368ef-111">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-111">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLPrefixMappings.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="368ef-112">Renvoie un entier 32 bits qui indique l’application dans laquelle le <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> objet a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-112">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> object was created.</span>
+          </span>
+          <span data-ttu-id="368ef-113">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="368ef-114">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-114">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLPrefixMappings.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLPrefixMapping this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLPrefixMapping Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLPrefixMappings.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As CustomXMLPrefixMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPrefixMapping ^ default[System::Object ^] { Microsoft::Office::Core::CustomXMLPrefixMapping ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLPrefixMapping</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="368ef-115">Le nom ou le numéro d’index de la <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> objet à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-115">The name or index number of the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="368ef-116">Obtient un <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> d’objet à partir de la <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-116">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" /> object from the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> collection.</span>
+          </span>
+          <span data-ttu-id="368ef-117">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMapping" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupNamespace">
+      <MemberSignature Language="C#" Value="public string LookupNamespace (string Prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupNamespace([in]string Prefix) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLPrefixMappings.LookupNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupNamespace (Prefix As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupNamespace(System::String ^ Prefix);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Prefix">
+          <span data-ttu-id="368ef-118">Contient un préfixe de la liste de mappage des préfixes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-118">Contains a prefix in the prefix mapping list.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="368ef-119">Cette méthode permet d'obtenir l'espace de noms correspondant au préfixe spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-119">Allows you to get the namespace corresponding to the specified prefix.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="368ef-120">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-120">
+              <b>String</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="368ef-121">
+            <para>Si aucun espace de noms n’est attribué au préfixe demandé, la méthode renvoie une chaîne vide (« »).</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-121">
+              <para>If no namespace is assigned to the requested prefix, the method returns an empty string ("").</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupPrefix">
+      <MemberSignature Language="C#" Value="public string LookupPrefix (string NamespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string LookupPrefix([in]string NamespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLPrefixMappings.LookupPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LookupPrefix (NamespaceURI As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LookupPrefix(System::String ^ NamespaceURI);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NamespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="NamespaceURI">
+          <span data-ttu-id="368ef-122">Contient l'URI de l'espace de noms.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-122">Contains the namespace URI.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="368ef-123">Cette méthode permet d'obtenir un préfixe correspondant à l'espace de noms spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-123">Allows you to get a prefix corresponding to the specified namespace.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="368ef-124">
+            <b>Chaîne</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-124">
+              <b>String</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="368ef-125">
+            <para>Si aucun préfixe n’est attribué à l’espace de noms demandé, la méthode renvoie une chaîne vide (« »). S’il existe plusieurs préfixes spécifiés dans le Gestionnaire d’espace de noms, la méthode retourne le premier préfixe qui correspond à l’espace de noms fourni.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-125">
+              <para>If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the supplied namespace.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLPrefixMappings.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="368ef-126">Obtient l’objet parent de le <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-126">Gets the parent object for the <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" /> object.</span>
+          </span>
+          <span data-ttu-id="368ef-127">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-127">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="368ef-128">
+            <b>Objet</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="368ef-128">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,394 @@
+<Type Name="PropertyTests" FullName="Microsoft.Office.Core.PropertyTests">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e80dd14606ca45495e1040d6d4b851b7262a059e" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659005" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PropertyTests : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyTests implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.PropertyTests" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PropertyTests&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PropertyTests : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0334-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4176)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="43d57-101">Une collection de <see cref="T:Microsoft.Office.Core.PropertyTest" /> objets qui représentent tous les critères de recherche d’une recherche de fichiers.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="43d57-101">A collection of <see cref="T:Microsoft.Office.Core.PropertyTest" /> objects that represent all the search criteria of a file search.</span>
+      </span>
+      <span data-ttu-id="43d57-102">Critères de recherche sont répertoriés dans la boîte de dialogue Recherche avancée (menu fichier, commande Ouvrir, bouton Rechercher).</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="43d57-102">Search criteria are listed in the Advanced Find dialog box (File menu, Open command, Advanced Find button).</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="43d57-103">
+        <para>Utiliser le <see cref="P:Microsoft.Office.Core.FileSearch.PropertyTests" /> propriété pour renvoyer la collection <b>PropertyTests</b> .</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.PropertyTests.Add(System.String,Microsoft.Office.Core.MsoCondition,System.Object,System.Object,Microsoft.Office.Core.MsoConnector)" /> pour ajouter un nouvel objet <b>PropertyTest</b> à la collection <b>PropertyTests</b> .</para>
+        <para>Utilisez <b>PropertyTests</b>(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>PropertyTest</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="43d57-103">
+          <para>Use the <see cref="P:Microsoft.Office.Core.FileSearch.PropertyTests" /> property to return the <b>PropertyTests</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.PropertyTests.Add(System.String,Microsoft.Office.Core.MsoCondition,System.Object,System.Object,Microsoft.Office.Core.MsoConnector)" /> method to add a new <b>PropertyTest</b> object to the <b>PropertyTests</b> collection.</para>
+          <para>Use <b>PropertyTests</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>PropertyTest</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string Name, Microsoft.Office.Core.MsoCondition Condition, object Value, object SecondValue, Microsoft.Office.Core.MsoConnector Connector = Microsoft.Office.Core.MsoConnector.msoConnectorAnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]string Name, [in]valuetype Microsoft.Office.Core.MsoCondition Condition, [in]object Value, [in]object SecondValue, [in]valuetype Microsoft.Office.Core.MsoConnector Connector) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.PropertyTests.Add(System.String,Microsoft.Office.Core.MsoCondition,System.Object,System.Object,Microsoft.Office.Core.MsoConnector)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (Name As String, Condition As MsoCondition, Optional Value As Object, Optional SecondValue As Object, Optional Connector As MsoConnector = Microsoft.Office.Core.MsoConnector.msoConnectorAnd)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="Condition" Type="Microsoft.Office.Core.MsoCondition" />
+        <Parameter Name="Value" Type="System.Object" />
+        <Parameter Name="SecondValue" Type="System.Object" />
+        <Parameter Name="Connector" Type="Microsoft.Office.Core.MsoConnector" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <span data-ttu-id="43d57-104">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-104">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-105">Le nom de l’objet <b>PropertyTest</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-105">The name of the <b>PropertyTest</b> object.</span>
+          </span>
+        </param>
+        <param name="Condition">
+          <span data-ttu-id="43d57-106">Requis <see cref="T:Microsoft.Office.Core.MsoCondition" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-106">Required <see cref="T:Microsoft.Office.Core.MsoCondition" />.</span>
+          </span>
+          <span data-ttu-id="43d57-107">Constante représentant la condition utilisée pour la recherche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-107">A constant representing the condition used for the search.</span>
+          </span>
+        </param>
+        <param name="Value">
+          <span data-ttu-id="43d57-108">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-108">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-109">Une valeur utilisée par <paramref name="condition" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-109">A value used by <paramref name="condition" />.</span>
+          </span>
+        </param>
+        <param name="SecondValue">
+          <span data-ttu-id="43d57-110">Facultatif <b>Object</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-110">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-111">Une deuxième valeur utilisée par <paramref name="condition" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-111">A second value used by <paramref name="condition" />.</span>
+          </span>
+        </param>
+        <param name="Connector">
+          <span data-ttu-id="43d57-112">Facultatif <b>MsoCondition</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-112">Optional <b>MsoCondition</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-113">Une constante un connecteur, par exemple <b>ou</b> ou <b>et</b> utilisé dans le critère de representinat.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-113">A constant representinat a connector such as <b>Or</b> or <b>And</b> used in the criterion.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="43d57-114">Ajouter un nouveau <see cref="T:Microsoft.Office.Core.PropertyTest" /> objet dans le <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection qui représente les critères de recherche d’un fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-114">Add a new <see cref="T:Microsoft.Office.Core.PropertyTest" /> object to the <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection representing the search criteria of a file search.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.PropertyTests.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43d57-115">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-115">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.PropertyTests.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43d57-116">Renvoie un <b>entier</b> indiquant le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-116">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.PropertyTests.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43d57-117">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-117">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="43d57-118">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.PropertyTests.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-118">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.PropertyTests.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.PropertyTests.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.PropertyTest this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.PropertyTest Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.PropertyTests.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As PropertyTest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PropertyTest ^ default[int] { Microsoft::Office::Core::PropertyTest ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.PropertyTest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="43d57-119">
+            <b>Integer</b> facultatif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-119">Optional <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-120">Numéro d’index du test de propriété à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-120">The index number of the property test to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="43d57-121">Renvoie un <see cref="T:Microsoft.Office.Core.PropertyTest" /> d’objet à partir de la <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-121">Returns a <see cref="T:Microsoft.Office.Core.PropertyTest" /> object from the <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.PropertyTests.Remove(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (Index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="43d57-122">
+            <b>Integer</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-122">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="43d57-123">Numéro d’index du test de propriété à supprimer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-123">The index number of the property test to be removed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="43d57-124">Cette méthode supprime l'objet spécifié de la collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43d57-124">Removes the specified object from the collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,524 @@
+<Type Name="Scripts" FullName="Microsoft.Office.Core.Scripts">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3d47d002587c045d30ad740a840c614a1267790d" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658519" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Scripts : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scripts implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Scripts" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Scripts&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Scripts : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0340-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="58d87-101">Une collection de <see cref="T:Microsoft.Office.Core.Script" /> objets qui représentent la collection des scripts HTML dans le document spécifié.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="58d87-101">A collection of <see cref="T:Microsoft.Office.Core.Script" /> objects that represent the collection of HTML scripts in the specified document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="58d87-102">
+        <para>La collection <b>Scripts</b> contient tous les objets de <b>Script</b> dans un document donné, dans l’ordre source (l’ordre dans lequel <b>Script</b> objets ont été ajoutés au fichier source). Ordre de la source n’est pas affecté par l’emplacement (en-tête ou corps de texte) du script dans le document. La collection <b>Scripts</b> est accessible à l’aide de la propriété <b>Scripts</b> de l’objet approprié (par exemple, l’objet <b>Document</b> dans Microsoft Word).</para>
+        <para>Vous pouvez utiliser les objets de <b>Script</b> pour accéder à un script ou pour ajouter un script à un document Microsoft Word, une feuille de calcul Microsoft Excel ou une diapositive Microsoft PowerPoint. Vous pouvez également utiliser la collection <b>Scripts</b> pour accéder à une page HTML ou un script qui est ouvert dans une application Microsoft Office.</para>
+        <para>Note Microsoft Access n’utilise pas ce composant Office partagé.</para>
+        <para>Lorsque vous ajoutez un objet <b>Script</b> à la collection <b>Scripts</b> , un objet <b>Shape</b> de type <b>msoScriptAnchor</b> est automatiquement ajouté au document. Sur une feuille de calcul Excel ou une diapositive PowerPoint, la forme est ajoutée à la collection <b>Shapes</b> . dans un Document Word, la forme est ajoutée à la collection <b>InlineShapes</b> . Vous ajoutez un <b>Script</b> à un document à l’aide de la <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> méthode.</para>
+        <para>Pour accéder à un élément particulier dans la collection <b>Scripts</b> , utilisez la <see cref="M:Microsoft.Office.Core.Scripts.Item(System.Object)" /> méthode et fournissez soit l’attribut ID de la &lt;SCRIPT&gt; balise ou le numéro d’index qui indique la position du script dans la collection. L’ID doit être unique dans le document. Dans le cas d’attributs ID en double, le premier script trouvé portant cet ID est renvoyé.</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Core.Scripts.Count" /> propriété pour déterminer le nombre d’objets de <b>Script</b> dans le document spécifié.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.Scripts.Delete" /> méthode pour supprimer un script de la collection <b>Scripts</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="58d87-102">
+          <para>The <b>Scripts</b> collection contains all of the <b>Script</b> objects in a given document, in source order (the order in which <b>Script</b> objects were added to the source file). Source order isn’t affected by the location (header or body text) of the script in the document. The <b>Scripts</b> collection can be accessed by using the <b>Scripts</b> property of the appropriate object (for example, the <b>Document</b> object in Microsoft Word).</para>
+          <para>You can use <b>Script</b> objects to access a script or to add a script to a Microsoft Word document, a Microsoft Excel worksheet, or a Microsoft PowerPoint slide. You can also use the <b>Scripts</b> collection to access any HTML page or script that’s opened in a Microsoft Office application.</para>
+          <para>Note   Microsoft Access doesn’t use this shared Office component.</para>
+          <para>When you add a <b>Script</b> object to the <b>Scripts</b> collection, a <b>Shape</b> object of type <b>msoScriptAnchor</b> is automatically added to the document. On an Excel worksheet or a PowerPoint slide, the shape is added to the <b>Shapes</b> collection; in a Word Document, the shape is added to the <b>InlineShapes</b> collection. You add a <b>Script</b> to a document by using the <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> method.</para>
+          <para>To access a particular item in the <b>Scripts</b> collection, use the <see cref="M:Microsoft.Office.Core.Scripts.Item(System.Object)" /> method and supply either the ID attribute of the &lt;SCRIPT&gt; tag or the index number that indicates the position of the script in the collection. The ID must be unique within the document. In the case of duplicate ID attributes, the first script found that has that ID is returned.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.Scripts.Count" /> property to determine the number of <b>Script</b> objects in the specified document.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.Scripts.Delete" /> method to remove a script from the <b>Scripts</b> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Add (object Anchor, Microsoft.Office.Core.MsoScriptLocation Location = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Microsoft.Office.Core.MsoScriptLanguage Language = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, string Id = &quot;&quot;, string Extended = &quot;&quot;, string ScriptText = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Add([in]object Anchor, [in]valuetype Microsoft.Office.Core.MsoScriptLocation Location, [in]valuetype Microsoft.Office.Core.MsoScriptLanguage Language, [in]string Id, [in]string Extended, [in]string ScriptText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Anchor As Object, Optional Location As MsoScriptLocation = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Optional Language As MsoScriptLanguage = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, Optional Id As String = &quot;&quot;, Optional Extended As String = &quot;&quot;, Optional ScriptText As String = &quot;&quot;) As Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Anchor" Type="System.Object">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IDispatchConstant</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="Location" Type="Microsoft.Office.Core.MsoScriptLocation" />
+        <Parameter Name="Language" Type="Microsoft.Office.Core.MsoScriptLanguage" />
+        <Parameter Name="Id" Type="System.String" />
+        <Parameter Name="Extended" Type="System.String" />
+        <Parameter Name="ScriptText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Anchor">
+          <span data-ttu-id="58d87-103">Facultatif <b>Object</b> (Microsoft Excel uniquement).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-103">Optional <b>Object</b> (Microsoft Excel only).</span>
+          </span>
+          <span data-ttu-id="58d87-104">Le <paramref name="Anchor" /> argument accepte un objet <b>Range</b> d’Excel, qui spécifie l’emplacement de l’ancre de script dans une <b>feuille de calcul</b>d' Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-104">The <paramref name="Anchor" /> argument accepts an Excel <b>Range</b> object, which specifies the placement of the script anchor on an Excel <b>Worksheet</b>.</span>
+          </span>
+          <span data-ttu-id="58d87-105">Vous ne pouvez pas insérer ancres de script dans les graphiques Excel.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-105">You cannot insert script anchors into Excel charts.</span>
+          </span>
+        </param>
+        <param name="Location">
+          <span data-ttu-id="58d87-106">Facultatif <see cref="T:Microsoft.Office.Core.MsoScriptLocation" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-106">Optional <see cref="T:Microsoft.Office.Core.MsoScriptLocation" />.</span>
+          </span>
+          <span data-ttu-id="58d87-107">Spécifie l’emplacement de l’ancre de script dans un document.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-107">Specifies the location of the script anchor in a document.</span>
+          </span>
+          <span data-ttu-id="58d87-108">Si vous avez spécifié le <paramref name="Anchor" /> argument, le <paramref name="Location" /> argument n’est pas utilisé ; l’emplacement de la <paramref name="Anchor" /> argument détermine l’emplacement de l’ancre de script.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-108">If you’ve specified the <paramref name="Anchor" /> argument, the <paramref name="Location" /> argument isn’t used; the location of the <paramref name="Anchor" /> argument determines the location of the script anchor.</span>
+          </span>
+        </param>
+        <param name="Language">
+          <span data-ttu-id="58d87-109">Facultatif <see cref="T:Microsoft.Office.Core.MsoScriptLanguage" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-109">Optional <see cref="T:Microsoft.Office.Core.MsoScriptLanguage" />.</span>
+          </span>
+          <span data-ttu-id="58d87-110">Spécifie le langage de script.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-110">Specifies the script language.</span>
+          </span>
+        </param>
+        <param name="Id">
+          <span data-ttu-id="58d87-111">Valeur <b>String</b> facultative. </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-111">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="58d87-112">L’ID de la &lt;SCRIPT&gt; balise dans le code HTML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-112">The ID of the &lt;SCRIPT&gt; tag in HTML.</span>
+          </span>
+          <span data-ttu-id="58d87-113">Le <paramref name="Id" /> argument spécifie un identificateur SGML utilisé pour nommer les éléments.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-113">The <paramref name="Id" /> argument specifies an SGML identifier used for naming elements.</span>
+          </span>
+          <span data-ttu-id="58d87-114">Les identificateurs valides incluent n’importe quelle chaîne commençant par une lettre et est composée de caractères alphanumériques ; la chaîne peut également inclure le caractère de soulignement (_).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-114">Valid identifiers include any string that begins with a letter and is composed of alphanumeric characters; the string can also include the underscore character ( _ ).</span>
+          </span>
+          <span data-ttu-id="58d87-115">L’ID doit être unique dans le document HTML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-115">The ID must be unique within the HTML document.</span>
+          </span>
+          <span data-ttu-id="58d87-116">Ce paramètre est exporté en tant que l’attribut ID de la &lt;SCRIPT&gt; balise.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-116">This parameter is exported as the ID attribute in the &lt;SCRIPT&gt; tag.</span>
+          </span>
+        </param>
+        <param name="Extended">
+          <span data-ttu-id="58d87-117">Valeur <b>String</b> facultative. </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-117">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="58d87-118">Spécifie les attributs qui doivent être ajoutés à la &lt;SCRIPT&gt; balise (attributs LANGUAGE et ID sont exportés par le biais de la <paramref name="Language" /> et <paramref name="Id" /> paramètres et ne doivent pas être exportés par le biais de la <paramref name="Extended" /> paramètre).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-118">Specifies attributes that are to be added to the &lt;SCRIPT&gt; tag (LANGUAGE and ID attributes are exported through the <paramref name="Language" /> and <paramref name="Id" /> parameters and should not be exported through the <paramref name="Extended" /> parameter).</span>
+          </span>
+          <span data-ttu-id="58d87-119">La valeur par défaut est une chaîne vide.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-119">The default is the empty string.</span>
+          </span>
+          <span data-ttu-id="58d87-120">Les attributs sont séparés par des espaces, comme dans HTML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-120">Attributes are separated by spaces, the same as in HTML.</span>
+          </span>
+          <span data-ttu-id="58d87-121">L’application Microsoft Office hôte n’offre aucun moyen de vérifier la syntaxe des attributs transmis.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-121">The Microsoft Office host application doesn’t provide any means of checking the syntax of passed attributes.</span>
+          </span>
+        </param>
+        <param name="ScriptText">
+          <span data-ttu-id="58d87-122">Valeur <b>String</b> facultative. </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-122">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="58d87-123">Spécifie le texte contenu dans un bloc de script.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-123">Specifies the text contained in a block of script.</span>
+          </span>
+          <span data-ttu-id="58d87-124">La valeur par défaut est une chaîne vide.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-124">The default is the empty string.</span>
+          </span>
+          <span data-ttu-id="58d87-125">L’application Microsoft Office hôte ne vérifie pas la syntaxe du script.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-125">The Microsoft Office host application doesn’t check the syntax of the script.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="58d87-126">Ajoute un <see cref="T:Microsoft.Office.Core.Script" /> objet dans le <see cref="T:Microsoft.Office.Core.Scripts" /> collection de l’un des objets suivants : un objet <b>Document</b> ou une <b>plage</b> dans Microsoft Word. un objet de <b>feuille de calcul</b> ou <b>d’un graphique</b> dans Microsoft Excel ; une <b>diapositive</b>, ou <b>SlideRange</b>, <b>masque</b>des diapositives, titre objet <b>Master</b> dans Microsoft PowerPoint.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-126">Adds a <see cref="T:Microsoft.Office.Core.Script" /> object to the <see cref="T:Microsoft.Office.Core.Scripts" /> collection of one of the following objects: a <b>Document</b> or <b>Range</b> object in Microsoft Word; a <b>Worksheet</b> or <b>Chart</b> object in Microsoft Excel; or a <b>Slide</b>, <b>SlideRange</b>, slide <b>Master</b>, or title <b>Master</b> object in Microsoft PowerPoint.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="58d87-127">
+            <para>Une forme associée à un bloc de script n’est pas exportée ou imprimée comme une forme dans le code HTML ; uniquement le bloc de script renvoie exporté.</para>
+            <para>Vous ne pouvez pas utiliser la méthode <b>Add</b> pour ajouter une ancre de script à une plage de diapositives PowerPoint qui contient plusieurs diapositives.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-127">
+              <para>A shape associated with a script block isn’t exported or printed as a shape in HTML; only the script block returns exported.</para>
+              <para>You cannot use the <b>Add</b> method to add a script anchor to a PowerPoint slide range that contains more than one slide.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="58d87-128">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-128">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="58d87-129">Renvoie un <b>entier</b> indiquant le nombre d’éléments dans la collection spécifiée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-129">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="58d87-130">
+            <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+            <para>Le nombre renvoyé est le nombre de blocs de script dans le document spécifié. Dans Microsoft Word, Scripts.Count renvoie le nombre total d’inline et ancres flottantes combinées.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-130">
+              <para>Some of the content in this topic may not be applicable to some languages.</para>
+              <para>The count returned is the number of script blocks in the specified document. In Microsoft Word, Scripts.Count returns the total number of inline and floating script anchors combined.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="58d87-131">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-131">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="58d87-132">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.Scripts.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-132">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.Scripts.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="58d87-133">Supprime l’objet spécifié de la collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-133">Deletes the specified object from the collection.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="58d87-134">
+            <para>Pour le <see cref="T:Microsoft.Office.Core.Scripts" /> collection, à l’aide de la méthode <b>Delete</b> supprime tous les scripts du document Microsoft Word spécifié, une feuille de calcul Microsoft Excel ou une diapositive Microsoft PowerPoint. Une ancre de script est représentée par une forme dans l’application hôte. Par conséquent, l’objet <b>Shape</b> associé à chaque ancre de script de type <b>msoScriptAnchor</b> est supprimé de la collection de <b>formes</b> dans Excel et PowerPoint et des collections de <b>formes</b> dans Word <b>InlineShapes</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-134">
+              <para>For the <see cref="T:Microsoft.Office.Core.Scripts" /> collection, using the <b>Delete</b> method removes all scripts from the specified Microsoft Word document, Microsoft Excel worksheet, or Microsoft PowerPoint slide. A script anchor is represented by a shape in the host application. Therefore, the <b>Shape</b> object associated with each script anchor of type <b>msoScriptAnchor</b> is deleted from the <b>Shapes</b> collection in Excel and PowerPoint and from the <b>InlineShapes</b> and <b>Shapes</b> collections in Word.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Script" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::Script ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="58d87-135">
+            <b>Objet</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-135">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="58d87-136">L’ID ou le numéro d’index du script à renvoyer.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-136">The ID or index number of the script to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="58d87-137">Renvoie un membre de la <see cref="T:Microsoft.Office.Core.Scripts" /> collection.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-137">Returns a member of the <see cref="T:Microsoft.Office.Core.Scripts" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="58d87-138">
+            <para>Accepte le numéro d’index ou l’ID du script que l’application Microsoft Office à renvoyer. La méthode <b>Item</b> accepte une valeur <b>d’objet</b> qui peut accepter un nombre ordinal (valeur d’index), qui renvoie le script enregistré à cet emplacement dans la collection <b>Scripts</b> , ou une valeur de <b>type String</b> qui représente le nom ou l’ID de la script</para> Collection 
+          <para>les <b>Scripts</b> contient tous les scripts dans un document donné, dans l’ordre source (l’ordre dans lequel <see cref="T:Microsoft.Office.Core.Script" /> objets s’affichent dans le fichier source). Les scripts sont conservés dans cet ordre quel que soit leur emplacement dans le document, c'est-à-dire qu’ils figurent dans l’en-tête ou le corps du texte.</para><para>, Vous pouvez utiliser la méthode <b>Item</b> pour accéder à un script de la collection de <b>Scripts</b> à l’aide de l’ID de la &lt;SCRIPT&gt; balise. L’attribut ID de la &lt;SCRIPT&gt; balise est identique à la <see cref="P:Microsoft.Office.Core.Script.Id" /> propriété de l’objet de <b>Script</b> . S’il y en double ou plusieurs ID dans le document et que vous utilisez la propriété <b>Id</b> d’un objet de <b>Script</b> pour accéder à un script à l’aide de la méthode <b>Item</b> , Office renvoie le premier script qui correspond à l’ID ; les autres scripts avec le même ID sont ignorés.</para> Ancres 
+          <para>Nouveau script ajoutés à la collection sont ajoutées à la fin de la collection <b>Scripts</b> dans l’ordre dans lequel elles ont été ajoutées au document. Les ancres de script demeurent dans cet ordre jusqu'à ce que le document est enregistré au format HTML, fermé, puis ouvert dans l’application hôte. Procédez comme suit entraîne la collection <b>Scripts</b> être indexée dans l’ordre dans lequel les ancres de script apparaissent dans le document, qui peut être différent de celui de l’ordre dans lequel elles ont été ajoutées. Par conséquent, vous êtes conseillé d’utiliser la propriété <b>Id</b> de l’objet de <b>Script</b> , plutôt que la position du script dans la collection, pour assurer l’identification positive du script.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-138">
+              <para>Accepts the index number or ID of the script you want the Microsoft Office application to return. The <b>Item</b> method accepts an <b>Object</b> value that can accept either an ordinal number (index value), which returns the script stored at that position in the <b>Scripts</b> collection, or a <b>String</b> value that represents the name or ID of the script.</para>
+              <para>The <b>Scripts</b> collection contains all of the scripts in a given document, in source order (the order in which <see cref="T:Microsoft.Office.Core.Script" /> objects appear in the source file). Scripts are maintained in source order regardless of their location in the document — that is, whether they’re in the header or the body text.</para>
+              <para>You can use the <b>Item</b> method to access a script in the <b>Scripts</b> collection by using the ID of the &lt;SCRIPT&gt; tag. The ID attribute of the &lt;SCRIPT&gt; tag is identical to the <see cref="P:Microsoft.Office.Core.Script.Id" /> property of the <b>Script</b> object. If there are duplicate or multiple IDs in the document and you use the <b>Id</b> property of a <b>Script</b> object to access a script by using the <b>Item</b> method, Office returns the first script that matches the ID; additional scripts with the same ID are ignored.</para>
+              <para>New script anchors added to the collection are appended to the end of the <b>Scripts</b> collection in the order in which they were added to the document. The script anchors remain in this order until the document is saved as HTML, closed, and then opened again in the host application. Following these steps causes the <b>Scripts</b> collection to be indexed in the order in which the script anchors appear in the document, which may be different than the order in which they were added to it. Therefore, you’re advised to use the <b>Id</b> property of the <b>Script</b> object, rather than the script’s position in the collection, to ensure positive identification of the script.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="58d87-139">Renvoie l’objet <b>Parent</b> de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="58d87-139">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

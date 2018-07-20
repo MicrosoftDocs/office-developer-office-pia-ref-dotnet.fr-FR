@@ -1,0 +1,231 @@
+<Type Name="SearchScope" FullName="Microsoft.Office.Core.SearchScope">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="81e4a6e84cfecdb010ed3d55dafab420b37e96c9" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658499" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SearchScope : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SearchScope implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SearchScope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SearchScope&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SearchScope : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0367-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="fbb79-101">Correspond à un type d’arborescence de dossiers qui peut être recherché à l’aide de la <see cref="T:Microsoft.Office.Core.FileSearch" /> objet.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="fbb79-101">Corresponds to a type of folder tree that can be searched by using the <see cref="T:Microsoft.Office.Core.FileSearch" /> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="fbb79-102">
+        <para>Un exemple d’une zone de recherche unique est les lecteurs locaux sur cet ordinateur. Dossiers réseau et Microsoft Outlook sont également des étendues de recherche distincte peuvent être disponibles. Chaque objet <b>SearchScope</b> contient un seul <see cref="T:Microsoft.Office.Core.ScopeFolder" /> objet qui correspond au dossier racine de l’étendue de recherche.</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Core.SearchScopes.Item(System.Int32)" /> propriété de la <see cref="T:Microsoft.Office.Core.SearchScopes" /> collection pour renvoyer un objet <b>SearchScope</b> .</para>
+        <para>En définitive, l’objet <b>SearchScope</b> est destiné à fournir un accès aux objets <b>ScopeFolder</b> qui peuvent être ajoutés à la <see cref="T:Microsoft.Office.Core.SearchFolders" /> collection.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="fbb79-102">
+          <para>An example of a single search scope is the local drives on this computer. Network folders and Microsoft Outlook folders are also separate search scopes that may be available. Each <b>SearchScope</b> object contains a single <see cref="T:Microsoft.Office.Core.ScopeFolder" /> object that corresponds to the root folder of the search scope.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SearchScopes.Item(System.Int32)" /> property of the <see cref="T:Microsoft.Office.Core.SearchScopes" /> collection to return a <b>SearchScope</b> object.</para>
+          <para>Ultimately, the <b>SearchScope</b> object is intended to provide access to <b>ScopeFolder</b> objects that can be added to the <see cref="T:Microsoft.Office.Core.SearchFolders" /> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="fbb79-103">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="fbb79-104">
+            <para>Vous pouvez utiliser cette propriété avec un objet <b>Automation</b> pour renvoyer l’application conteneur de l’objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-104">
+              <para>You can use this property with an <b>Automation</b> object to return that object's container application.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="fbb79-105">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-105">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="fbb79-106">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.SearchScope.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-106">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SearchScope.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeFolder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ScopeFolder ScopeFolder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ScopeFolder ScopeFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.ScopeFolder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScopeFolder As ScopeFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ScopeFolder ^ ScopeFolder { Microsoft::Office::Core::ScopeFolder ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ScopeFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="fbb79-107">Renvoie un <see cref="T:Microsoft.Office.Core.ScopeFolder" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-107">Returns a <see cref="T:Microsoft.Office.Core.ScopeFolder" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSearchIn this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSearchIn Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchScope.Type" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As MsoSearchIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSearchIn default { Microsoft::Office::Core::MsoSearchIn get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSearchIn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="fbb79-108">Renvoie une valeur qui correspond au type de <see cref="T:Microsoft.Office.Core.SearchScope" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-108">Returns a value that corresponds to the type of <see cref="T:Microsoft.Office.Core.SearchScope" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="fbb79-109">
+            <para>Le type indique la zone dans laquelle le <see cref="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" /> méthode de la <see cref="T:Microsoft.Office.Core.FileSearch" /> objet doit rechercher les fichiers.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="fbb79-109">
+              <para>The type indicates the area in which the <see cref="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" /> method of the <see cref="T:Microsoft.Office.Core.FileSearch" /> object will search for files.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

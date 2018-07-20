@@ -1,0 +1,572 @@
+<Type Name="SharedWorkspaceLink" FullName="Microsoft.Office.Core.SharedWorkspaceLink">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="390051eef4132ee6c7674832f7fe84b88d7ca173" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658494" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SharedWorkspaceLink : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharedWorkspaceLink implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SharedWorkspaceLink" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SharedWorkspaceLink&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SharedWorkspaceLink : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C037F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ce7b3-101">Cet objet, membre ou énumération est déconseillée et n’est pas destinée à être utilisé dans votre code. L’objet <b>SharedWorkspaceLink</b> représente un lien d’adresse URL enregistré dans un espace de travail de document partagé.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ce7b3-101">This object, member, or enumeration is deprecated and is not intended to be used in your code.The <b>SharedWorkspaceLink</b> object represents a URL link saved in a shared document workspace.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="ce7b3-102">
+        <para>Cet objet est un membre de la <see cref="T:Microsoft.Office.Core.SharedWorkspaceLinks" /> collection.</para>
+        <para>Utiliser l’objet <b>SharedWorkspaceLink</b> pour gérer les liens vers des documents et des informations d’intérêt aux membres collaborant sur l’ou les documents dans l’espace de travail partagé.</para>
+        <para>Utiliser l' <b>élément</b>(<paramref name="index" />) la méthode de la collection <b>SharedWorkspaceLinks</b> pour renvoyer un objet <b>SharedWorkspaceLink</b> spécifique.</para> Utilisation de 
+      <para>les <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Description" /> propriété pour définir la description du lien qui apparaîtra sous l’onglet liens du volet espace de travail partagé et sur la page Web. Utiliser le <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.URL" /> propriété à définir l’adresse de destination du lien. Utiliser le <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Notes" /> propriété pour fournir des informations supplémentaires sur le lien.</para><para>Utiliser le <see cref="M:Microsoft.Office.Core.SharedWorkspaceLink.Save" /> méthode pour télécharger les modifications vers le serveur après avoir modifié les propriétés de l’objet <b>SharedWorkspaceLink</b> .</para><para>Utiliser le <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedBy" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedDate" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedBy" />, et <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedDate" /> propriétés à retourner des informations sur l’historique de chaque lien.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ce7b3-102">
+          <para>This object is a member of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceLinks" /> collection.</para>
+          <para>Use the <b>SharedWorkspaceLink</b> object to manage links to additional documents and information of interest to the members who are collaborating on the document(s) in the shared workspace.</para>
+          <para>Use the <b>Item</b>(<paramref name="index" />) method of the <b>SharedWorkspaceLinks</b> collection to return a specific <b>SharedWorkspaceLink</b> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Description" /> property to set the link description that will appear on the Links tab of the Shared Workspace pane and on the workspace Web page. Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.URL" /> property to set the destination address of the link. Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Notes" /> property to supply additional information about the link.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.SharedWorkspaceLink.Save" /> method to upload changes to the server after you modify properties of the <b>SharedWorkspaceLink</b> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedBy" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedDate" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedBy" />, and <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedDate" /> properties to return information about the history of each link.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-103">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public string CreatedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CreatedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-104">Renvoie le nom convivial du membre qui a créé l’objet espace de travail partagé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-104">Returns the friendly name of the member who created the shared workspace object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-105">
+            <para>La propriété <b>CreatedBy</b> renvoie le nom convivial stocké dans la propriété <b>Name</b> de l’objet <b>DWSMember</b> .</para>
+            <para>La <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> et <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objets n’ont pas d’une propriété <b>CreatedBy</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-105">
+              <para>The <b>CreatedBy</b> property returns the friendly name stored in the <b>Name</b> property of the <b>DWSMember</b> object.</para>
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>CreatedBy</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDate">
+      <MemberSignature Language="C#" Value="public object CreatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CreatedDate { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-106">Renvoie la date et l’heure de création de l’objet espace de travail partagé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-106">Returns the date and time when the shared workspace object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-107">
+            <para>Le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> et <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objets n’ont pas de propriété <b>CreatedDate</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-107">
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>CreatedDate</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-108">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-108">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-109">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-109">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceLink.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-110">Supprime l’objet actif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-110">Deletes the current object.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ce7b3-111">
+            <para>Cette méthode échoue si l’utilisateur n’est pas autorisé à supprimer l’objet actif de l’espace de travail partagé.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-111">
+              <para>This method will fail if the user does not have permission to delete the current object from the shared workspace.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-112">Cette propriété renvoie ou définit une valeur de <b>chaîne</b> descriptive spécifié <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" /> objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-112">Returns or sets a descriptive <b>String</b> value for the specified <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-113">
+            <para>La propriété <b>Description</b> est facultative lors d’un nouveau lien de l’espace de travail partagé ou tâche est créée et peut être vide.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-113">
+              <para>The <b>Description</b> property is optional when a new shared workspace link or task is created, and may be empty.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedBy">
+      <MemberSignature Language="C#" Value="public string ModifiedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModifiedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModifiedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-114">Renvoie le nom de l’utilisateur qui a modifié l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-114">Returns the name of the user who last modified the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-115">
+            <para>Pour les objets de l’espace de travail partagé, la propriété <b>ModifiedBy</b> renvoie le nom convivial stocké dans la propriété <b>Name</b> de l’objet <b>DWSMember</b> .</para>
+            <para>La <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> et <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objets n’ont pas de propriété <b>ModifiedBy</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-115">
+              <para>For shared workspace objects, the <b>ModifiedBy</b> property returns the friendly name stored in the <b>Name</b> property of the <b>DWSMember</b> object.</para>
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>ModifiedBy</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedDate">
+      <MemberSignature Language="C#" Value="public object ModifiedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ModifiedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.ModifiedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModifiedDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ModifiedDate { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-116">Renvoie la date et l’heure de dernière modification de l’objet espace de travail partagé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-116">Returns the date and time when the shared workspace object was last modified.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-117">
+            <para>Le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> et <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objets n’ont pas de propriété <b>ModifiedDate</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-117">
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>ModifiedDate</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notes">
+      <MemberSignature Language="C#" Value="public string Notes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Notes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.Notes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Notes As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Notes { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-118">Cette propriété renvoie ou définit les notes facultatives associées à un lien de l’espace de travail partagé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-118">Returns or sets the optional notes associated with a shared workspace link.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-119">Renvoie l’objet <b>Parent</b> de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-119">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceLink.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-120">Charge les modifications apportées par programme à un <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" /> sur le serveur.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-120">Uploads changes made programmatically to a <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" /> to the server.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ce7b3-121">
+            <para>Utilisez la méthode <b>Save</b> pour télécharger les modifications vers le serveur après avoir modifié les propriétés d’un lien de l’espace de travail partagé ou une tâche.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-121">
+              <para>Use the <b>Save</b> method to upload changes to the server after changing the properties of a shared workspace link or task.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URL">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string URL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceLink.URL" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property URL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ce7b3-122">Cette propriété renvoie ou définit le (URL) uniform resource locator du lien enregistré dans l’espace de travail partagé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-122">Returns or sets the uniform resource locator (URL) of the link saved in the shared workspace.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ce7b3-123">
+            <para>Utilisez la propriété <b>URL</b> de l’objet <b>SharedWorkspaceLink</b> pour extraire l’adresse web enregistrée dans le lien de l’espace de travail partagé. Utilisez l’option <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Description" /> et <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Notes" /> propriétés à récupérer des informations supplémentaires sur le lien.</para>
+            <para>La propriété <b>URL</b> renvoie une chaîne codée en URL. Par exemple, un espace dans le nom du dossier est représenté par % 20. Utilisez une fonction simple pour remplacer ce caractère d’échappement par un espace.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ce7b3-123">
+              <para>Use the <b>URL</b> property of the <b>SharedWorkspaceLink</b> object to retrieve the web address saved in the shared workspace link. Use the optional <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Description" /> and <see cref="P:Microsoft.Office.Core.SharedWorkspaceLink.Notes" /> properties to retrieve additional information about the link.</para>
+              <para>The <b>URL</b> property returns a URL-encoded string. For example, a space in the folder name is represented by %20. Use a simple function to replace this escaped character with a space.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

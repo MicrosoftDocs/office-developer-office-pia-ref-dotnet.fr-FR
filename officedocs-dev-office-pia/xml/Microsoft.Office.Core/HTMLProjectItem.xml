@@ -1,0 +1,431 @@
+<Type Name="HTMLProjectItem" FullName="Microsoft.Office.Core.HTMLProjectItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f5ffa97ea62974bbac8bab5a7335aeb9d432ed6a" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658513" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface HTMLProjectItem : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLProjectItem implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.HTMLProjectItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface HTMLProjectItem&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class HTMLProjectItem : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0358-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ec065-101">Représente un élément de projet qui constitue une branche d’élément de projet dans l’Explorateur de projets dans Microsoft Script Editor.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ec065-101">Represents an individual project item that’s a project item branch in the Project Explorer in the Microsoft Script Editor.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="ec065-102">
+        <para>L’objet <b>HTMLProjectItem</b> est un membre de la <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> collection.</para>
+        <para>Utilisez <b>HTMLProjectItems</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index d’un élément de projet, pour renvoyer un seul objet <b>HTMLProjectItem</b> . Utiliser le <see cref="P:Microsoft.Office.Core.HTMLProjectItem.Name" /> propriété permet de renvoyer le nom complet de l’élément de projet.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.HTMLProjectItem.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" /> méthode pour ouvrir un élément de projet dans l’affichage source ou texte et utiliser le <see cref="P:Microsoft.Office.Core.HTMLProjectItem.IsOpen" /> propriété pour déterminer si l’élément de projet est actuellement ouverte.</para>
+        <para>Utiliser le <see cref="M:Microsoft.Office.Core.HTMLProjectItem.SaveCopyAs(System.String)" /> méthode pour enregistrer l’élément de projet à l’aide d’un nouveau nom de fichier.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ec065-102">
+          <para>The <b>HTMLProjectItem</b> object is a member of the <see cref="T:Microsoft.Office.Core.HTMLProjectItems" /> collection.</para>
+          <para>Use <b>HTMLProjectItems</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number of a project item, to return a single <b>HTMLProjectItem</b> object. Use the <see cref="P:Microsoft.Office.Core.HTMLProjectItem.Name" /> property to return the display name of the project item.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.HTMLProjectItem.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" /> method to open a project item in source view or text view, and use the <see cref="P:Microsoft.Office.Core.HTMLProjectItem.IsOpen" /> property to determine whether the project item is currently open.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.HTMLProjectItem.SaveCopyAs(System.String)" /> method to save the project item using a new file name.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-103">Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-104">Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ec065-105">
+            <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+            <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.HTMLProjectItem.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.HTMLProjectItem.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public bool IsOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.IsOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOpen { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-106">Détermine si l’élément de projet HTML spécifié est ouvert dans Microsoft Script Editor.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-106">Determines if the specified HTML project item is open in the Microsoft Script Editor.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="ec065-107">
+            <para>Cette propriété renvoie <b>la valeur True</b> si l’élément de projet HTML spécifié est ouvert dans Microsoft Script Editor. <b>False</b> si l’élément n’est pas ouvert.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-107">
+              <para>This property returns <b>True</b> if the specified HTML project item is open in the Microsoft Script Editor; <b>False</b> if the item is not open.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadFromFile">
+      <MemberSignature Language="C#" Value="public void LoadFromFile (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadFromFile([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProjectItem.LoadFromFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadFromFile (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFromFile(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="ec065-108">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-108">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="ec065-109">Le chemin d’accès complet du fichier texte qui contient le texte à charger.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-109">The fully qualified path of the text file that contains the text to be loaded.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ec065-110">Met à jour le texte dans Microsoft Script Editor avec du texte à partir du fichier spécifié (sur disque).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-110">Updates the text in the Microsoft Script Editor with text from the specified file (on disk).</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-111">Renvoie le nom de l'objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-111">Returns the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]valuetype Microsoft.Office.Core.MsoHTMLProjectOpen OpenKind) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProjectItem.Open(Microsoft.Office.Core.MsoHTMLProjectOpen)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (Optional OpenKind As MsoHTMLProjectOpen = (Microsoft.Office.Core.MsoHTMLProjectOpen) 0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OpenKind" Type="Microsoft.Office.Core.MsoHTMLProjectOpen" />
+      </Parameters>
+      <Docs>
+        <param name="OpenKind">
+          <span data-ttu-id="ec065-112">Facultatif <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-112">Optional <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" />.</span>
+          </span>
+          <span data-ttu-id="ec065-113">Le mode dans lequel le projet spécifié ou l’élément de projet est ouvert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-113">The view in which the specified project or project item is opened.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ec065-114">Ouvre le projet HTML spécifié ou un élément de projet HTML dans Microsoft Script Editor dans un des affichages spécifiés par l’option <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" /> constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-114">Opens the specified HTML project or HTML project item in the Microsoft Script Editor in one of the views specified by the optional <see cref="T:Microsoft.Office.Core.MsoHTMLProjectOpen" /> constants.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ec065-115">
+            <para>Si une des constantes n’est pas spécifiée, l’élément de projet est ouvert dans l’affichage par défaut.</para>
+            <para>L’affichage par défaut est déterminée par si Microsoft Script Editor est ouvert ou non lorsque la méthode <b>Open</b> est exécutée. Si l’éditeur de Script n’est pas ouvert, la méthode <b>Open</b> démarre Microsoft Script Editor en affichage source. Si l’éditeur de Script est déjà ouvert, la méthode <b>Open</b> active Microsoft Script Editor et affiche le script dans l’affichage actuel.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-115">
+              <para>If one of the constants is not specified, the project item is opened in the default view.</para>
+              <para>The default view is determined by whether or not the Microsoft Script Editor is open when the <b>Open</b> method is executed. If the Script Editor is not open, the <b>Open</b> method starts the Script Editor in source view. If the Script Editor is already open, the <b>Open</b> method activates the Script Editor and displays the script in the current view.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-116">Renvoie l’objet <b>Parent</b> de l’objet spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-116">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveCopyAs">
+      <MemberSignature Language="C#" Value="public void SaveCopyAs (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveCopyAs([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.HTMLProjectItem.SaveCopyAs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveCopyAs (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveCopyAs(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="ec065-117">
+            <b>String</b>obligatoire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-117">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="ec065-118">Le chemin d’accès complet du fichier vers lequel vous souhaitez enregistrer l’élément de projet HTML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-118">The fully qualified path of the file to which you want to save the HTML project item.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ec065-119">Enregistre l’élément de projet HTML spécifié à l’aide d’un nouveau nom de fichier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-119">Saves the specified HTML project item using a new file name.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.HTMLProjectItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ec065-120">Cette propriété renvoie ou définit le texte HTML dans l’éditeur HTML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ec065-120">Returns or sets the HTML text in the HTML editor.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
