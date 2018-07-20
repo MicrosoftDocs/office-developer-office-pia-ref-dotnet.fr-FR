@@ -1,0 +1,316 @@
+<Type Name="Scripts" FullName="Microsoft.Office.Core.Scripts">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3d47d002587c045d30ad740a840c614a1267790d" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658519" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Scripts : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scripts implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Scripts" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Scripts&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Scripts : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0340-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Une collection de <see cref="T:Microsoft.Office.Core.Script" /> objets qui représentent la collection des scripts HTML dans le document spécifié.</summary>
+    <remarks>
+      <para>La collection <b>Scripts</b> contient tous les objets de <b>Script</b> dans un document donné, dans l’ordre source (l’ordre dans lequel <b>Script</b> objets ont été ajoutés au fichier source). Ordre de la source n’est pas affecté par l’emplacement (en-tête ou corps de texte) du script dans le document. La collection <b>Scripts</b> est accessible à l’aide de la propriété <b>Scripts</b> de l’objet approprié (par exemple, l’objet <b>Document</b> dans Microsoft Word).</para>
+      <para>Vous pouvez utiliser les objets de <b>Script</b> pour accéder à un script ou pour ajouter un script à un document Microsoft Word, une feuille de calcul Microsoft Excel ou une diapositive Microsoft PowerPoint. Vous pouvez également utiliser la collection <b>Scripts</b> pour accéder à une page HTML ou un script qui est ouvert dans une application Microsoft Office.</para>
+      <para>Note Microsoft Access n’utilise pas ce composant Office partagé.</para>
+      <para>Lorsque vous ajoutez un objet <b>Script</b> à la collection <b>Scripts</b> , un objet <b>Shape</b> de type <b>msoScriptAnchor</b> est automatiquement ajouté au document. Sur une feuille de calcul Excel ou une diapositive PowerPoint, la forme est ajoutée à la collection <b>Shapes</b> . dans un Document Word, la forme est ajoutée à la collection <b>InlineShapes</b> . Vous ajoutez un <b>Script</b> à un document à l’aide de la <see cref="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" /> méthode.</para>
+      <para>Pour accéder à un élément particulier dans la collection <b>Scripts</b> , utilisez la <see cref="M:Microsoft.Office.Core.Scripts.Item(System.Object)" /> méthode et fournissez soit l’attribut ID de la &lt;SCRIPT&gt; balise ou le numéro d’index qui indique la position du script dans la collection. L’ID doit être unique dans le document. Dans le cas d’attributs ID en double, le premier script trouvé portant cet ID est renvoyé.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Core.Scripts.Count" /> propriété pour déterminer le nombre d’objets de <b>Script</b> dans le document spécifié.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Core.Scripts.Delete" /> méthode pour supprimer un script de la collection <b>Scripts</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Add (object Anchor, Microsoft.Office.Core.MsoScriptLocation Location = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Microsoft.Office.Core.MsoScriptLanguage Language = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, string Id = &quot;&quot;, string Extended = &quot;&quot;, string ScriptText = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Add([in]object Anchor, [in]valuetype Microsoft.Office.Core.MsoScriptLocation Location, [in]valuetype Microsoft.Office.Core.MsoScriptLanguage Language, [in]string Id, [in]string Extended, [in]string ScriptText) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Add(System.Object,Microsoft.Office.Core.MsoScriptLocation,Microsoft.Office.Core.MsoScriptLanguage,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Anchor As Object, Optional Location As MsoScriptLocation = Microsoft.Office.Core.MsoScriptLocation.msoScriptLocationInBody, Optional Language As MsoScriptLanguage = Microsoft.Office.Core.MsoScriptLanguage.msoScriptLanguageVisualBasic, Optional Id As String = &quot;&quot;, Optional Extended As String = &quot;&quot;, Optional ScriptText As String = &quot;&quot;) As Script" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Anchor" Type="System.Object">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.IDispatchConstant</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="Location" Type="Microsoft.Office.Core.MsoScriptLocation" />
+        <Parameter Name="Language" Type="Microsoft.Office.Core.MsoScriptLanguage" />
+        <Parameter Name="Id" Type="System.String" />
+        <Parameter Name="Extended" Type="System.String" />
+        <Parameter Name="ScriptText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Anchor">Facultatif <b>Object</b> (Microsoft Excel uniquement). Le <paramref name="Anchor" /> argument accepte un objet <b>Range</b> d’Excel, qui spécifie l’emplacement de l’ancre de script dans une <b>feuille de calcul</b>d' Excel. Vous ne pouvez pas insérer ancres de script dans les graphiques Excel.</param>
+        <param name="Location">Facultatif <see cref="T:Microsoft.Office.Core.MsoScriptLocation" />. Spécifie l’emplacement de l’ancre de script dans un document. Si vous avez spécifié le <paramref name="Anchor" /> argument, le <paramref name="Location" /> argument n’est pas utilisé ; l’emplacement de la <paramref name="Anchor" /> argument détermine l’emplacement de l’ancre de script.</param>
+        <param name="Language">Facultatif <see cref="T:Microsoft.Office.Core.MsoScriptLanguage" />. Spécifie le langage de script.</param>
+        <param name="Id">Valeur <b>String</b> facultative.  L’ID de la &lt;SCRIPT&gt; balise dans le code HTML. Le <paramref name="Id" /> argument spécifie un identificateur SGML utilisé pour nommer les éléments. Les identificateurs valides incluent n’importe quelle chaîne commençant par une lettre et est composée de caractères alphanumériques ; la chaîne peut également inclure le caractère de soulignement (_). L’ID doit être unique dans le document HTML. Ce paramètre est exporté en tant que l’attribut ID de la &lt;SCRIPT&gt; balise.</param>
+        <param name="Extended">Valeur <b>String</b> facultative.  Spécifie les attributs qui doivent être ajoutés à la &lt;SCRIPT&gt; balise (attributs LANGUAGE et ID sont exportés par le biais de la <paramref name="Language" /> et <paramref name="Id" /> paramètres et ne doivent pas être exportés par le biais de la <paramref name="Extended" /> paramètre). La valeur par défaut est une chaîne vide. Les attributs sont séparés par des espaces, comme dans HTML. L’application Microsoft Office hôte n’offre aucun moyen de vérifier la syntaxe des attributs transmis.</param>
+        <param name="ScriptText">Valeur <b>String</b> facultative.  Spécifie le texte contenu dans un bloc de script. La valeur par défaut est une chaîne vide. L’application Microsoft Office hôte ne vérifie pas la syntaxe du script.</param>
+        <summary>Ajoute un <see cref="T:Microsoft.Office.Core.Script" /> objet dans le <see cref="T:Microsoft.Office.Core.Scripts" /> collection de l’un des objets suivants : un objet <b>Document</b> ou une <b>plage</b> dans Microsoft Word. un objet de <b>feuille de calcul</b> ou <b>d’un graphique</b> dans Microsoft Excel ; une <b>diapositive</b>, ou <b>SlideRange</b>, <b>masque</b>des diapositives, titre objet <b>Master</b> dans Microsoft PowerPoint.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Une forme associée à un bloc de script n’est pas exportée ou imprimée comme une forme dans le code HTML ; uniquement le bloc de script renvoie exporté.</para>
+          <para>Vous ne pouvez pas utiliser la méthode <b>Add</b> pour ajouter une ancre de script à une plage de diapositives PowerPoint qui contient plusieurs diapositives.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <b>entier</b> indiquant le nombre d’éléments dans la collection spécifiée.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+          <para>Le nombre renvoyé est le nombre de blocs de script dans le document spécifié. Dans Microsoft Word, Scripts.Count renvoie le nombre total d’inline et ancres flottantes combinées.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.Scripts.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime l’objet spécifié de la collection.</summary>
+        <remarks>
+          <para>Pour le <see cref="T:Microsoft.Office.Core.Scripts" /> collection, à l’aide de la méthode <b>Delete</b> supprime tous les scripts du document Microsoft Word spécifié, une feuille de calcul Microsoft Excel ou une diapositive Microsoft PowerPoint. Une ancre de script est représentée par une forme dans l’application hôte. Par conséquent, l’objet <b>Shape</b> associé à chaque ancre de script de type <b>msoScriptAnchor</b> est supprimé de la collection de <b>formes</b> dans Excel et PowerPoint et des collections de <b>formes</b> dans Word <b>InlineShapes</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Script Item (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Script Item([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Scripts.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Object) As Script" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::Script ^ Item(System::Object ^ Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Script</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objet</b>obligatoire. L’ID ou le numéro d’index du script à renvoyer.</param>
+        <summary>Renvoie un membre de la <see cref="T:Microsoft.Office.Core.Scripts" /> collection.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Accepte le numéro d’index ou l’ID du script que l’application Microsoft Office à renvoyer. La méthode <b>Item</b> accepte une valeur <b>d’objet</b> qui peut accepter un nombre ordinal (valeur d’index), qui renvoie le script enregistré à cet emplacement dans la collection <b>Scripts</b> , ou une valeur de <b>type String</b> qui représente le nom ou l’ID de la script</para> Collection 
+          <para>les <b>Scripts</b> contient tous les scripts dans un document donné, dans l’ordre source (l’ordre dans lequel <see cref="T:Microsoft.Office.Core.Script" /> objets s’affichent dans le fichier source). Les scripts sont conservés dans cet ordre quel que soit leur emplacement dans le document, c'est-à-dire qu’ils figurent dans l’en-tête ou le corps du texte.</para><para>, Vous pouvez utiliser la méthode <b>Item</b> pour accéder à un script de la collection de <b>Scripts</b> à l’aide de l’ID de la &lt;SCRIPT&gt; balise. L’attribut ID de la &lt;SCRIPT&gt; balise est identique à la <see cref="P:Microsoft.Office.Core.Script.Id" /> propriété de l’objet de <b>Script</b> . S’il y en double ou plusieurs ID dans le document et que vous utilisez la propriété <b>Id</b> d’un objet de <b>Script</b> pour accéder à un script à l’aide de la méthode <b>Item</b> , Office renvoie le premier script qui correspond à l’ID ; les autres scripts avec le même ID sont ignorés.</para> Ancres 
+          <para>Nouveau script ajoutés à la collection sont ajoutées à la fin de la collection <b>Scripts</b> dans l’ordre dans lequel elles ont été ajoutées au document. Les ancres de script demeurent dans cet ordre jusqu'à ce que le document est enregistré au format HTML, fermé, puis ouvert dans l’application hôte. Procédez comme suit entraîne la collection <b>Scripts</b> être indexée dans l’ordre dans lequel les ancres de script apparaissent dans le document, qui peut être différent de celui de l’ordre dans lequel elles ont été ajoutées. Par conséquent, vous êtes conseillé d’utiliser la propriété <b>Id</b> de l’objet de <b>Script</b> , plutôt que la position du script dans la collection, pour assurer l’identification positive du script.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Scripts.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’objet <b>Parent</b> de l’objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

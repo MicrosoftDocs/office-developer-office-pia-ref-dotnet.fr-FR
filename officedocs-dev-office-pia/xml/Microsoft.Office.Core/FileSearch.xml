@@ -1,0 +1,605 @@
+<Type Name="FileSearch" FullName="Microsoft.Office.Core.FileSearch">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6b9b7b2b808d83357cc4a067d756b5cc9697f058" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658868" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileSearch : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileSearch implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.FileSearch" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileSearch&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileSearch : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0332-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4176)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente la fonctionnalité de la boîte de dialogue Ouvrir accessible par le menu fichier.</summary>
+    <remarks>
+      <para>Utilisez la propriété <b>FileSearch</b> d’objet <b>d’Application</b> d’une application spécifique pour renvoyer l’objet <b>FileSearch</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Core.FileSearch.NewSearch" /> méthode pour rétablir les critères de recherche pour les paramètres par défaut. Toutes les valeurs de propriété sont conservées après chaque recherche, à l’aide de la méthode <b>NewSearch</b> , vous pouvez sélectivement définir les propriétés pour la recherche de fichier suivante sans réinitialiser manuellement les valeurs de propriété précédentes.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.FileSearch.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> des objets <b>SharedWorkspaceFile</b>, <b>SharedWorkspaceFolder</b>, <b>SharedWorkspaceLink</b>et <b>SharedWorkspaceTask</b> pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public int Execute (Microsoft.Office.Core.MsoSortBy SortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Microsoft.Office.Core.MsoSortOrder SortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, bool AlwaysAccurate = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Execute([in]valuetype Microsoft.Office.Core.MsoSortBy SortBy, [in]valuetype Microsoft.Office.Core.MsoSortOrder SortOrder, [in]bool AlwaysAccurate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute (Optional SortBy As MsoSortBy = Microsoft.Office.Core.MsoSortBy.msoSortByFileName, Optional SortOrder As MsoSortOrder = Microsoft.Office.Core.MsoSortOrder.msoSortOrderAscending, Optional AlwaysAccurate As Boolean = false) As Integer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SortBy" Type="Microsoft.Office.Core.MsoSortBy" />
+        <Parameter Name="SortOrder" Type="Microsoft.Office.Core.MsoSortOrder" />
+        <Parameter Name="AlwaysAccurate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="SortBy">Facultatif <see cref="T:Microsoft.Office.Core.MsoSortBy" />. La méthode utilisée pour trier les fichiers renvoyés.</param>
+        <param name="SortOrder">Facultatif <see cref="T:Microsoft.Office.Core.MsoSortOrder" />. L’ordre dans lequel les fichiers retournés sont triés.</param>
+        <param name="AlwaysAccurate">
+          <b>Boolean</b> facultatif. <b>True</b> pour inclure les fichiers qui ont été ajoutés, modifié ou supprimé dans la mesure où le fichier d’index a été modifié dans le cadre de la recherche de fichier. La valeur par défaut est <b>True</b>.</param>
+        <summary>Commence la recherche pour les fichiers spécifiés.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Cette propriété renvoie un <b>entier</b>: zéro (0) si aucun fichier n’est trouvé, ou un nombre positif si un ou plusieurs fichiers sont trouvés.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le nom du fichier à rechercher lors d’une recherche de fichiers.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+          <para>Le nom du fichier peut inclure la * (astérisque) ou ? caractères génériques (point d’interrogation). Utilisez le caractère générique point d’interrogation pour correspondre à un seul caractère. Par exemple, tapez <b>gr?y </b>pour correspondre à la fois « gris » et « gris ». Utilisez le caractère générique astérisque pour n’importe quel nombre de caractères. Par exemple, tapez <b>*.txt</b> pour rechercher tous les fichiers dont le. Extension TXT.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoFileType FileType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoFileType FileType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileType As MsoFileType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoFileType FileType { Microsoft::Office::Core::MsoFileType get(); void set(Microsoft::Office::Core::MsoFileType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le type de fichier à rechercher lors d’une recherche de fichiers.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La constante <b>msoFileTypeOfficeFiles</b> inclut tous les fichiers avec l’une des extensions suivantes : * *.doc, *.xls, * .ppt, *.pps, *.obd, *.mdb, *.mpd, * .dot, *.xlt, * .pot, *.obt, *.htm ou * .html.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileTypes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileTypes FileTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FileTypes FileTypes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FileTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileTypes As FileTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FileTypes ^ FileTypes { Microsoft::Office::Core::FileTypes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.FileTypes" /> collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoundFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FoundFiles FoundFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FoundFiles FoundFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.FoundFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FoundFiles As FoundFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FoundFiles ^ FoundFiles { Microsoft::Office::Core::FoundFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FoundFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.FoundFiles" /> objet qui contient les noms de tous les fichiers trouvés pendant une recherche.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoLastModified LastModified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoLastModified LastModified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModified As MsoLastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoLastModified LastModified { Microsoft::Office::Core::MsoLastModified get(); void set(Microsoft::Office::Core::MsoLastModified value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoLastModified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une constante qui représente la durée pendant laquelle depuis le fichier spécifié a été dernière modification et enregistré.</summary>
+        <value>La valeur par défaut est <b>msoLastModifiedAnyTime</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LookIn">
+      <MemberSignature Language="C#" Value="public string LookIn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LookIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.LookIn" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookIn As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LookIn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit le dossier à rechercher lors de la recherche de fichier spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchAllWordForms">
+      <MemberSignature Language="C#" Value="public bool MatchAllWordForms { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchAllWordForms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchAllWordForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchAllWordForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchAllWordForms { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Détermine si la recherche de fichier est étendue pour inclure toutes les formes du mot spécifié figurant dans le corps du fichier ou dans les propriétés du fichier.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si la recherche de fichiers est étendue pour inclure toutes les formes du mot spécifié figurant dans le corps du fichier ou dans les propriétés du fichier ; <b>False</b> si la recherche n’est pas développée.</para>
+          <para>Cette propriété est disponible uniquement si le fichier Mswds_en.lex a été installé et enregistré. Notez que ce fichier n’est pas installé dans le cadre d’une installation par défaut.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchTextExactly">
+      <MemberSignature Language="C#" Value="public bool MatchTextExactly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MatchTextExactly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.MatchTextExactly" />
+      <MemberSignature Language="VB.NET" Value="Public Property MatchTextExactly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MatchTextExactly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Détermine si le fichier spécifié la recherche porte uniquement les fichiers dont le texte du corps ou les propriétés contiennent exactement le mot ou expression que vous avez spécifiés.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para>
+          <para>Cette propriété renvoie <b>la valeur True</b> si la recherche de fichier spécifié sera uniquement les fichiers dont le texte du corps ou les propriétés de fichier contiennent exactement le mot ou une expression que vous avez spécifié ; <b>False</b> si la recherche est plus grand.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSearch">
+      <MemberSignature Language="C#" Value="public void NewSearch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewSearch() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.NewSearch" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NewSearch ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewSearch();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Réinitialise tous les paramètres de critères de recherche à leurs valeurs par défaut.</summary>
+        <remarks>
+          <para>Partie du contenu dans cette rubrique n’est peut-être pas applicable à certaines langues.</para> Paramètres de critères de recherche 
+          <para>sont conservés au sein d’une session d’application. Utilisez cette méthode chaque fois que vous modifiez les critères de recherche. Cette méthode réinitialise pas la valeur de la <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> propriété.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyTests">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.PropertyTests PropertyTests { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.PropertyTests PropertyTests" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.PropertyTests" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyTests As PropertyTests" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::PropertyTests ^ PropertyTests { Microsoft::Office::Core::PropertyTests ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.PropertyTests</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Core.PropertyTests" /> collection qui représente tous les critères de recherche pour une recherche de fichiers.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshScopes">
+      <MemberSignature Language="C#" Value="public void RefreshScopes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshScopes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileSearch.RefreshScopes" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RefreshScopes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshScopes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Actualise la liste des disponibles actuellement <see cref="T:Microsoft.Office.Core.ScopeFolder" /> objets.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchFolders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchFolders SearchFolders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchFolders SearchFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchFolders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchFolders As SearchFolders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchFolders ^ SearchFolders { Microsoft::Office::Core::SearchFolders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchFolders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.SearchFolders" /> collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchScopes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SearchScopes SearchScopes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SearchScopes SearchScopes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchScopes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SearchScopes As SearchScopes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SearchScopes ^ SearchScopes { Microsoft::Office::Core::SearchScopes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SearchScopes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Core.SearchScopes" /> collection.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchSubFolders">
+      <MemberSignature Language="C#" Value="public bool SearchSubFolders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SearchSubFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.SearchSubFolders" />
+      <MemberSignature Language="VB.NET" Value="Public Property SearchSubFolders As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SearchSubFolders { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Détermine si la recherche inclut tous les sous-dossiers du dossier spécifié par le <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> propriété.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété renvoie <b>la valeur True</b> si la recherche inclut tous les sous-dossiers dans le dossier spécifié par le <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> propriété ; <b>False</b> s’il n’existe pas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOrProperty">
+      <MemberSignature Language="C#" Value="public string TextOrProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextOrProperty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileSearch.TextOrProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextOrProperty As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextOrProperty { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit l’ou les mots à rechercher, dans le corps d’un fichier ou les propriétés du fichier, lors de la recherche de fichier.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Mot ou phrase peut inclure la * (astérisque) ou ? (point d’interrogation).</para> Caractère 
+          <para>utiliser le caractère générique point d’interrogation pour remplacer un caractère unique. Par exemple, tapez <b>gr?y</b> pour rechercher tous les fichiers qui contiennent au moins une instance de « gris » ou « gris. »</para> Caractère générique de 
+          <para>utiliser l’astérisque à n’importe quel nombre de caractères. Par exemple, tapez <b>San *</b> pour renvoyer tous les fichiers qui contiennent au moins un mot commençant par « San. »</para><para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

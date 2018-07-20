@@ -1,0 +1,260 @@
+<Type Name="UserPermission" FullName="Microsoft.Office.Core.UserPermission">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ff15509d065f51ea294d05c3618fe720cd2f4bdf" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20658906" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface UserPermission : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserPermission implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.UserPermission" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UserPermission&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UserPermission : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0375-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>L’objet <b>UserPermission</b> associe un ensemble d’autorisations sur le document actif à un utilisateur unique et une date d’expiration facultative.</summary>
+    <remarks>
+      <para>Représente le document actif au membre <see cref="T:Microsoft.Office.Core.Permission" /> collection.</para> Utilisation de 
+      <para>les <see cref="M:Microsoft.Office.Core.Permission.Add(System.String,System.Object,System.Object)" /> méthode de l’objet <b>Permission</b> pour accorder des autorisations spécifiques sur le document actif à un nouvel utilisateur, avec une date d’expiration facultative. Utiliser le <see cref="M:Microsoft.Office.Core.UserPermission.Remove" /> méthode de l’objet <b>UserPermission</b> pour supprimer un utilisateur et autorisations de l’utilisateur.</para><para>Tandis que certaines autorisations accordées via l’interface utilisateur (telles que <b>msoPermissionPrint</b>) s’appliquent à tous les utilisateurs, vous pouvez utiliser l’objet <b>UserPermission</b> pour les attribuer individuellement avec des dates d’expiration.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un objet <b>Application</b> qui représente l’application conteneur pour l’objet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un entier 32 bits qui indique l'application dans laquelle l'objet spécifié a été créé.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si l’objet spécifié a été créé dans Microsoft Word, cette propriété renvoie 1297307460, qui représente la chaîne MSWD ; Si créé dans Microsoft Excel, cette propriété renvoie 1480803660. Cette valeur peut également être représentée par la constante <b>wdCreatorCode</b> dans Word ou <b>xlCreatorCode</b> dans Excel.</para>
+          <para>Le <b>créateur</b> de la propriété est principalement conçue pour être utilisée sur Macintosh, où chaque application possède un code de créateur de quatre caractères. Par exemple, Microsoft Word a le code créateur MSWD. Pour plus d’informations sur cette propriété, consultez la référence du langage aide incluse avec Microsoft Office Édition Macintosh.</para> Propriété 
+          <para>le <b>créateur</b> renvoie toujours l’identificateur numérique de l’application active, tout comme la <see cref="P:Microsoft.Office.Core.Sync.Application" /> propriété renvoie toujours le nom de l’application active sous forme de chaîne. Utilisez la propriété <b>CreatedBy</b> de le <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, et <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objets pour renvoyer le nom de la personne qui a créé ces objets. Utilisez les propriétés de document pour renvoyer des informations à propos des auteurs de documents Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpirationDate">
+      <MemberSignature Language="C#" Value="public object ExpirationDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExpirationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.ExpirationDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpirationDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExpirationDate { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit la date d’expiration facultative des autorisations sur le document actif affectées à l’utilisateur spécifié <see cref="T:Microsoft.Office.Core.UserPermission" /> objet.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>L’objet <b>UserPermission</b> associe un ensemble d’autorisations sur le document actif à un utilisateur unique et une date d’expiration facultative. La propriété <b>ExpirationDate</b> renvoie ou définit la date d’expiration facultative de l’objet <b>UserPermission</b> spécifié à l’aide du fuseau horaire local.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’objet <b>Parent</b> de l’objet spécifié.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Permission">
+      <MemberSignature Language="C#" Value="public int Permission { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Permission" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.Permission" />
+      <MemberSignature Language="VB.NET" Value="Public Property Permission As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Permission { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>Integer</b> représentant les autorisations sur le document actif affectées à l’utilisateur spécifié <see cref="T:Microsoft.Office.Core.UserPermission" /> objet.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Permission</b> peut être une ou une combinaison de <see cref="T:Microsoft.Office.Core.MsoPermission" /> constantes.</para> Objet 
+          <para><b>UserPermission</b> associe un ensemble d’autorisations sur le document actif à un utilisateur unique et une date d’expiration facultative. La propriété <b>Permission</b> renvoie l’ensemble des autorisations utilisateur déterminées par l’objet <b>UserPermission</b> spécifié. Bien que certaines autorisations accordées via l’interface utilisateur (telles que <b>msoPermissionPrint</b>) s’appliquent à tous les utilisateurs, vous pouvez utiliser l’objet <b>UserPermission</b> pour les attribuer individuellement avec des dates d’expiration.</para><list type="bullet"><item><para>L’option <b>msoPermissionView</b> ou <b>msoPermissionRead</b> correspond à l’option lire de l’interface utilisateur.</para></item><item><para>L’option <b>msoPermissionExtract</b> correspond à l’autoriser les utilisateurs avec un accès en lecture à copier le contenu option dans l’interface utilisateur.</para></item> Option 
+            <item><para>le <b>msoPermissionChange</b> correspond à l’option de modification de l’interface utilisateur. L’option <b>msoPermissionChange</b> représente la somme de <b>msoPermissionView</b> + <b>msoPermissionEdit</b> + <b>msoPermissionSave</b> + <b>msoPermissionExtract</b> et permet aux utilisateurs d’afficher , modifier, copier et enregistrer, mais pas imprimer, le document.</para></item><item><para>L’option <b>msoPermissionPrint</b> correspond à l’option le contenu dans l’interface utilisateur thePrint.</para></item><item><para>L’option <b>msoPermissionObjectModel</b> correspond à l’accès au contenu par programme option dans l’interface utilisateur et permet aux utilisateurs d’accéder au document par programme via son modèle objet. Les utilisateurs sans <b>msoPermissionObjectModel</b> ne peuvent pas utiliser le modèle objet pour déterminer leurs propres droits, car l’accès par programme est désactivé.</para></item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.UserPermission.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime le texte spécifié <see cref="T:Microsoft.Office.Core.UserPermission" /> d’objet à partir de la <see cref="T:Microsoft.Office.Core.Permission" /> collection du document actif.</summary>
+        <remarks>
+          <para>L’objet <b>UserPermission</b> associe un ensemble d’autorisations sur le document actif à un utilisateur unique et une date d’expiration facultative. La méthode <b>Remove</b> supprime l’utilisateur et l’ensemble d’autorisations utilisateur déterminés par l’objet <b>UserPermission</b> spécifié.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserId">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.UserPermission.UserId" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property UserId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’adresse de messagerie de l’utilisateur dont les autorisations sur le document actif sont déterminées par le <see cref="T:Microsoft.Office.Core.UserPermission" /> objet.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>L’objet <b>UserPermission</b> associe un ensemble d’autorisations sur le document actif à un utilisateur unique et une date d’expiration facultative. La propriété <b>UserID</b> renvoie le nom sous forme de courrier électronique de l’utilisateur dont les autorisations sont déterminées par l’objet <b>UserPermission</b> spécifié.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
